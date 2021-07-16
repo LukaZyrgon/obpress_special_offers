@@ -1,0 +1,210 @@
+.obpress-special-offer-holder {
+  font-family: "Montserrat", Sans-serif;
+}
+
+.obpress-special-offer-title p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  margin-bottom: 18px;
+  color: #838383;
+}
+
+.obpress-special-offer-title h3 {
+  color: #414b4f;
+  font-weight: 600;
+  font-size: 48px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.obpress-special-offer-title h3,
+.obpress-special-offer-title p {
+  text-align: center;
+}
+
+.obpress-swiper .swiper-slide img {
+  width: 770px;
+}
+
+.obpress-swiper-nav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.obpress-swiper-prev,
+.obpress-swiper-pagination,
+.obpress-swiper-next {
+  position: static;
+  display: flex;
+  align-items: center;
+}
+
+.obpress-swiper-prev,
+.obpress-swiper-next {
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 35px;
+  background-size: cover;
+  margin-top: 0px;
+}
+
+.obpress-swiper-prev {
+  background-image: url(../icons/back.svg);
+  margin-right: 80px;
+}
+
+.obpress-swiper-next {
+  background-image: url(../icons/next.svg);
+  margin-left: 80px;
+}
+
+.obpress-swiper-lines .swiper-pagination-bullet {
+  border-radius: 0px;
+  width: 20px;
+}
+
+.obpress-swiper-lines .swiper-pagination-bullet-active {
+  width: 30px;
+}
+
+.obpress-swiper-pagination-disabled {
+  display: none;
+}
+
+.obpress-swiper-nav .swiper-pagination-bullet {
+  margin-right: 10px;
+}
+
+.obpress-swiper-nav .swiper-pagination-bullet:last-child {
+  margin-right: 0px;
+}
+
+.obpress-offer-info-holder {
+  background-color: #fff;
+  position: relative;
+  max-width: 85%;
+  margin: -129px auto 22px auto;
+}
+
+.obpress-swiper
+  .swiper-slide:not(.swiper-slide-active)
+  .obpress-offer-info-holder {
+  opacity: 0;
+}
+
+.obpress-offer-info-holder {
+  -webkit-transition: opacity 0.5s ease-in;
+  -moz-transition: opacity 0.5s ease-in;
+  -o-transition: opacity 0.5s ease-in;
+  opacity: 1;
+}
+
+.obpress-offer-partial {
+  color: #fff;
+  position: relative;
+  background: #000000;
+  padding: 10px 28px;
+  clear: both;
+  font-size: 16px;
+  position: absolute;
+  top: -20px;
+}
+
+div.obpress-offer-partial-left {
+  margin-left: -10px;
+  float: left;
+}
+
+div.obpress-offer-partial-left h2 {
+  margin: 0 12px;
+}
+
+div.obpress-offer-partial-left::before {
+  display: block;
+  width: 10px;
+  height: 0px;
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+  content: "";
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #222222;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.obpress-offer-info {
+  display: flex;
+  padding: 20px 27px 27px 30px;
+}
+
+.obpress-offer-description {
+  padding-top: 15px;
+  max-width: 69%;
+}
+
+.obpress-offer-description p,
+.obpress-offer-description h5 {
+  margin: 0;
+}
+
+.obpress-offer-description h5 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 7px;
+  color: #222222;
+}
+
+.obpress-offer-description p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #2c2f33;
+  padding-right: 57px;
+}
+
+.obpress-offer-price-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.obpress-offer-price p {
+  margin-top: 0px;
+  font-size: 12px;
+  color: #2c2f33;
+  line-height: 15px;
+  margin-bottom: 0px;
+}
+
+.obpress-offer-number {
+  color: #bead8e;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.obpress-offer-night {
+  font-size: 16px;
+  color: #bead8e;
+  line-height: 24px;
+}
+
+.obpress-offer-more {
+  width: 100%;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  color: #fff;
+  background-color: #000000;
+  border: 1px solid #000000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.obpress-swiper-image {
+  min-height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
