@@ -21,9 +21,9 @@ if(get_option('obpress_api_set') == true){
 
 require_once(WP_PLUGIN_DIR . '/OBPress_SearchBarPlugin/plugin-update-checker-4.11/plugin-update-checker.php');
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-    'https://github.com/MilosZyrgon/OBPress_SearchBarPlugin',
+    'https://github.com/LukaZyrgon/obpress_special_offers',
     __FILE__,
-    'OBPress_SearchBarPlugin'
+    'OBPress_SpecialOffers'
 );
 
 //Set the branch that contains the stable release.
