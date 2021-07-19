@@ -19,7 +19,7 @@ if(get_option('obpress_api_set') == true){
 
 // TODO, MAKE GIT BRANCH, CONNECT WITH UPDATE CHECKER
 
-require_once(WP_PLUGIN_DIR . '/OBPress_SearchBarPlugin/plugin-update-checker-4.11/plugin-update-checker.php');
+require_once(WP_PLUGIN_DIR . '/OBPress_SpecialOffers/plugin-update-checker-4.11/plugin-update-checker.php');
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
     'https://github.com/LukaZyrgon/obpress_special_offers',
     __FILE__,
