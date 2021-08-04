@@ -83,7 +83,6 @@
 
 .obpress-offer-info-holder {
   background-color: #fff;
-  position: relative;
   max-width: 85%;
   margin: -129px auto 22px auto;
 }
@@ -109,7 +108,8 @@
   clear: both;
   font-size: 16px;
   position: absolute;
-  top: -20px;
+  top: 0;
+  left: 0;
 }
 
 div.obpress-offer-partial-left {
@@ -136,11 +136,12 @@ div.obpress-offer-partial-left::before {
 
 .obpress-offer-info {
   display: flex;
+  justify-content: space-between;
   padding: 20px 27px 27px 30px;
+  box-shadow: 0px 14px 54px #BEAD8E33;
 }
 
 .obpress-offer-description {
-  padding-top: 15px;
   max-width: 69%;
 }
 
@@ -161,6 +162,11 @@ div.obpress-offer-partial-left::before {
   line-height: 20px;
   color: #2c2f33;
   padding-right: 57px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .obpress-offer-price-button {
@@ -177,6 +183,11 @@ div.obpress-offer-partial-left::before {
   margin-bottom: 0px;
 }
 
+.obpress-offer-number, .obpress-offer-night {
+  display: inline-block;
+  margin-top: 7px;
+}
+
 .obpress-offer-number {
   color: #bead8e;
   font-weight: bold;
@@ -186,7 +197,7 @@ div.obpress-offer-partial-left::before {
 }
 
 .obpress-offer-night {
-  font-size: 16px;
+  font-size: 14px;
   color: #bead8e;
   line-height: 24px;
 }
@@ -200,6 +211,7 @@ div.obpress-offer-partial-left::before {
   border: 1px solid #000000;
   font-size: 14px;
   font-weight: bold;
+  box-shadow: 0px 14px 24px #bead8e29;
 }
 
 .obpress-swiper-image {
@@ -207,4 +219,13 @@ div.obpress-offer-partial-left::before {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  box-shadow: 0px 14px 24px #bead8e33;
+}
+
+
+.obpress-offer-hotel-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #BEAD8E;
+  margin-bottom: 17px;
 }
