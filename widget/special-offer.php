@@ -99,6 +99,19 @@ class SpecialOffer extends \Elementor\Widget_Base
 		);
 
 		$this->add_control(
+			'obpress_so_box_hotel_name_color',
+			[
+				'label' => __('Info Box Hotel Name Color', 'OBPress_SpecialOffers'),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'input_type' => 'color',
+				'default' => '#BEAD8E',
+				'selectors' => [
+					'.obpress-offer-description h6' => 'color: {{obpress_so_box_hotel_name_color}}',
+				],
+			]
+		);
+
+		$this->add_control(
 			'obpress_so_box_text_color',
 			[
 				'label' => __('Info Box Text Color', 'OBPress_SpecialOffers'),
@@ -289,6 +302,21 @@ class SpecialOffer extends \Elementor\Widget_Base
 		);
 
 		$this->add_control(
+			'so_number_of_slides',
+			[
+				'label' => __( 'Number of Pagination Bullets', 'OBPress_SearchBarPlugin' ),
+				'type' => \Elementor\Controls_Manager::SELECT,
+				'default' => '5',
+				'options' => [
+					'2'  => __( '2', 'plugin-domain' ),
+					'3' => __( '3', 'plugin-domain' ),
+					'4' => __( '4', 'plugin-domain'),
+					'5' => __( '5', 'plugin-domain')
+				],
+			]
+		);
+
+		$this->add_control(
 			'obpress_so_pagination_bullet_color',
 			[
 				'label' => __('Pagination Bullet Color', 'OBPress_SpecialOffers'),
@@ -322,6 +350,10 @@ class SpecialOffer extends \Elementor\Widget_Base
 
 	protected function render()
 	{
+		ini_set("xdebug.var_display_max_children", '-1');
+		ini_set("xdebug.var_display_max_data", '-1');
+		ini_set("xdebug.var_display_max_depth", '-1');
+
 		$settings_so = $this->get_settings_for_display();
 		$chain = get_option('chain_id');
 
@@ -438,6 +470,9 @@ class SpecialOffer extends \Elementor\Widget_Base
 		if(isset($settings_so['obpress_so_pagination_bullet_next_icon']['value']['url']) && !empty($settings_so['obpress_so_pagination_bullet_next_icon']['value']['url'])){
 			$nextIcon = $settings_so['obpress_so_pagination_bullet_next_icon']['value']['url'];
 		}
+
+		// var_dump($settings_so['so_slides_per_view']);
+		// var_dump($settings_so['so_number_of_slides']);
 
 		require_once(WP_PLUGIN_DIR . '/OBPress_SpecialOffers/widget/assets/templates/template.php');
 	}
