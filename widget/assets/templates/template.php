@@ -6,7 +6,7 @@
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <?php  
-                    $slides = $settings_so['so_number_of_slides'] ;
+                    $slides = $settings_so['so_number_of_slides'];
                     $slide = 0;
                 ?>
 
