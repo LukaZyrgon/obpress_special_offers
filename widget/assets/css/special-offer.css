@@ -27,6 +27,14 @@
   width: 770px;
 }
 
+.obpress-swiper .swiper-slide-active .obpress-swiper-image {
+  box-shadow: 0px 14px 24px #BEAD8E33;
+}
+
+.obpress-swiper .swiper-slide {
+  height: 500px;
+}
+
 .obpress-swiper-nav {
   display: flex;
   width: 100%;
@@ -219,7 +227,6 @@ div.obpress-offer-partial-left::before {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  box-shadow: 0px 14px 24px #bead8e33;
 }
 
 
