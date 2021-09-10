@@ -3,6 +3,24 @@
 class SpecialOffer extends \Elementor\Widget_Base
 {
 
+	public function __construct($data = [], $args = null) {
+		parent::__construct($data, $args);
+		
+		wp_register_script( 'special-offer_js',  plugins_url( '/OBPress_SpecialOffers/widget/assets/js/special-offer.js'), [ 'elementor-frontend' ], '1.0.0', true );
+
+		wp_register_style( 'special-offer_css', plugins_url( '/OBPress_SpecialOffers/widget/assets/css/special-offer.css') );        
+	}
+
+	public function get_script_depends()
+	{
+		return ['special-offer_js'];
+	}
+
+	public function get_style_depends()
+	{
+		return ['special-offer_css'];
+	}
+	
 	public function get_name()
 	{
 		return 'SpecialOffer';
@@ -22,17 +40,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 	{
 		return ['OBPress'];
 	}
-
-	public function get_script_depends()
-	{
-		return ['special-offer_js'];
-	}
-
-	public function get_style_depends()
-	{
-		return ['special-offer_css'];
-	}
-
+	
 	protected function _register_controls()
 	{
 
@@ -384,7 +392,10 @@ class SpecialOffer extends \Elementor\Widget_Base
 
 
 
-		$hotels = BeApi::getHotelSearchForChain($chain, "true", $language);
+		// $hotels = BeApi::getHotelSearchForChain($chain, "true", $language);
+		$hotels = BeApi::ApiCache('hotel_search_chain_'.$chain.'_'.$language.'_true', BeApi::$cache_time['hotel_search_chain'], function() use ($chain, $language){
+            return BeApi::getHotelSearchForChain($chain, "true",$language);
+        });		
 
 		if ($hotels->PropertiesType != null) {
 			$properties = $hotels->PropertiesType->Properties;
@@ -398,7 +409,10 @@ class SpecialOffer extends \Elementor\Widget_Base
 			$HotelDescriptiveContents = null;
 		}
 
-		$available_packages = BeApi::getClientAvailablePackages($chain, $currency, $language);
+		// $available_packages = BeApi::getClientAvailablePackages($chain, $currency, $language);
+        $available_packages = BeApi::ApiCache('available_packages_4_'.$chain.'_'.$currency.'_'.$language.'_'.$mobile, BeApi::$cache_time['available_packages_4'], function() use ($chain, $currency, $language, $mobile){
+            return BeApi::getClientAvailablePackages($chain, $currency, $language);
+        });		
 
 		$rateplans = [];
 		$package_offers = [];
@@ -411,7 +425,17 @@ class SpecialOffer extends \Elementor\Widget_Base
 
 			foreach ($hotels_from_packages as $hotel_from_packages) {
 
-				$rateplans[] = BeApi::getHotelRatePlans($hotel_from_packages, $language);
+				// $rateplans[] = BeApi::getHotelRatePlans($hotel_from_packages, $language);
+                $rateplans[] = BeApi::ApiCache('rateplans_array_'.$hotel_from_packages.'_'.$language, BeApi::$cache_time['rateplans_array'], function() use ($hotel_from_packages, $language){
+                    $response = BeApi::getHotelRatePlans($hotel_from_packages, $language);
+
+                    if($response != false) {
+                        return $response;
+                    }
+                    else {
+                        return [];
+                    }
+                });				
 			}
 
 			$rateplans_per_hotel = [];

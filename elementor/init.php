@@ -138,11 +138,7 @@ final class OBPress_SpecialOffer_Widget {
 		$this->i18n();
 
         add_action('elementor/widgets/widgets_registered', [ $this, 'init_widgets']);
-
-        add_action('elementor/frontend/after_enqueue_styles', [ $this, 'widget_styles']);
-
-		add_action( 'elementor/frontend/after_register_scripts', [ $this, 'widget_scripts' ] );
-
+		
         add_action('elementor/elements/categories_registered', [ $this, 'add_elementor_widget_categories']);
 
     }
@@ -155,17 +151,6 @@ final class OBPress_SpecialOffer_Widget {
 		// Register widget
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \SpecialOffer() );
 		
-
-	}
-
-	public function widget_styles() {
-		wp_register_style( 'special-offer_css', plugins_url( '/OBPress_SpecialOffers/widget/assets/css/special-offer.css') );        
-        wp_enqueue_style('special-offer_css');
-	}
-
-	public function widget_scripts() {
-		wp_register_script( 'special-offer_js',  plugins_url( '/OBPress_SpecialOffers/widget/assets/js/special-offer.js'), array('jquery'), null, true  );
-		wp_enqueue_script('special-offer_js');
 
 	}
 
