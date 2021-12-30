@@ -498,6 +498,8 @@ class SpecialOffer extends \Elementor\Widget_Base
 		// var_dump($settings_so['so_slides_per_view']);
 		// var_dump($settings_so['so_number_of_slides']);
 
+		$plugin_directory_path = plugins_url( '', __FILE__ );
+
 		require_once(WP_PLUGIN_DIR . '/OBPress_SpecialOffers/widget/assets/templates/template.php');
 	}
 }

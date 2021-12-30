@@ -24,8 +24,19 @@
                                 }                                
                             ?>
                             <div class="swiper-slide">
-                                <div class="obpress-swiper-image" style="background-image:url(<?= $offer["image"]->ImageItemsType->ImageItems[0]->URL->Address ?>)">
+   
+                                <div class="obpress-swiper-image" style="background-image:url(<?php
+
+                                    if  ( isset(  $offer["image"]->ImageItemsType->ImageItems[0]->URL->Address   ) ) {
+                                        echo $offer["image"]->ImageItemsType->ImageItems[0]->URL->Address ; 
+                                    } else {
+                                        echo $plugin_directory_path . '/assets/icons/placeholderNewWhite.svg'; 
+                                    }
+
+                                ?>
+                                )">
                                 </div>
+                                
                                 <div class="obpress-offer-info-holder">
                                     <div class="obpress-offer-partial obpress-offer-partial-left">
                                         <?= 'Pay up to ' . $HotelDescriptiveContents[$key]->MaxPartialPaymentParcel . 'x' ?>  
