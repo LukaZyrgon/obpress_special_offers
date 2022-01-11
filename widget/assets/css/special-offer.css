@@ -211,9 +211,11 @@ div.obpress-offer-partial-left::before {
 }
 
 .obpress-offer-more {
+  display: flex!important;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  padding-top: 17px;
-  padding-bottom: 17px;
   color: #fff;
   background-color: #000000;
   border: 1px solid #000000;

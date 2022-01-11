@@ -59,7 +59,7 @@
                                                 </span><span class="obpress-offer-night">/Night</span></p>
                                             </div>
                                             <div class="obpress-offer-button">
-                                                <button class="obpress-offer-more">See more</button>
+                                                <a class="obpress-offer-more" href="/package?package_id=<?= $offer["rate_plan"]->RatePlanID ?>">See more</a>
                                             </div>
                                         </div>
                                     </div>
