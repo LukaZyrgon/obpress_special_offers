@@ -239,3 +239,17 @@ div.obpress-offer-partial-left::before {
   margin-bottom: 17px;
   margin-top: 0px;
 }
+
+.obpress-special-offer-link-holder {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+}
+
+.obpress-special-offer-link-holder a {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: underline;
+  line-height: 24px;
+}
