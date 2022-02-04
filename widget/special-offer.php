@@ -61,6 +61,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 				'default' => '#000',
 				'selectors' => [
 					'.obpress-offer-partial' => 'background-color: {{obpress_so_box_ribbon_background_color}}',
+					'.obpress-so-mob-partial' => 'background-color: {{obpress_so_box_ribbon_background_color}}',
 					'div.obpress-offer-partial-left::before' => 'border-right: 10px solid {{obpress_so_box_ribbon_background_color}}'
 				],
 			]
@@ -75,6 +76,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 				'default' => '#fff',
 				'selectors' => [
 					'.obpress-offer-partial' => 'color: {{obpress_so_box_ribbon_text_color}}',
+					'.obpress-so-mob-partial' => 'color: {{obpress_so_box_ribbon_text_color}}'
 				],
 			]
 		);
@@ -88,7 +90,8 @@ class SpecialOffer extends \Elementor\Widget_Base
 				'input_type' => 'color',
 				'default' => '#fff',
 				'selectors' => [
-					'.obpress-offer-info' => 'background-color: {{obpress_so_box_background_color}}'
+					'.obpress-offer-info' => 'background-color: {{obpress_so_box_background_color}}',
+					'.obpress-so-mob-slide' => 'background-color {{obpress_so_box_background_color}}'
 				],
 			]
 		);
@@ -102,6 +105,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 				'default' => '#222222',
 				'selectors' => [
 					'.obpress-offer-description h5' => 'color: {{obpress_so_box_title_color}}',
+					'.obpress-so-mob-slide-title .offer-name' => 'color: {{obpress_so_box_title_color}}'
 				],
 			]
 		);
@@ -115,6 +119,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 				'default' => '#BEAD8E',
 				'selectors' => [
 					'.obpress-offer-description h6' => 'color: {{obpress_so_box_hotel_name_color}}',
+					'.obpress-so-mob-slide-title .hotel-name' => 'color: {{obpress_so_box_hotel_name_color}}'
 				],
 			]
 		);
@@ -128,6 +133,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 				'default' => '#2c2f33',
 				'selectors' => [
 					'.obpress-offer-description p, .obpress-offer-price p' => 'color: {{obpress_so_box_text_color}}',
+					'.obpress-so-mob-slide-desc p' => 'color: {{obpress_so_box_text_color}}',
 				],
 			]
 		);
@@ -141,6 +147,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 				'default' => '#bead8e',
 				'selectors' => [
 					'.obpress-offer-number, .obpress-offer-night' => 'color: {{obpress_so_box_price_color}}',
+					'.obpress-so-mob-slide-price-val' => 'color: {{obpress_so_box_price_color}}',
 				],
 			]
 		);
@@ -164,7 +171,8 @@ class SpecialOffer extends \Elementor\Widget_Base
 				'input_type' => 'color',
 				'default' => '#000',
 				'selectors' => [
-					'.obpress-offer-more' => 'background-color: {{obpress_so_button_background_color}}'
+					'.obpress-offer-more' => 'background-color: {{obpress_so_button_background_color}}',
+					'.obpress-so-mob-slide-button' => 'background-color: {{obpress_so_button_background_color}}'
 				],
 			]
 		);
@@ -177,7 +185,8 @@ class SpecialOffer extends \Elementor\Widget_Base
 				'input_type' => 'color',
 				'default' => '#fff',
 				'selectors' => [
-					'.obpress-offer-more' => 'color: {{obpress_so_button_text_color}}'
+					'.obpress-offer-more' => 'color: {{obpress_so_button_text_color}}',
+					'.obpress-so-mob-slide-button' => 'color: {{obpress_so_button_text_color}}'
 				],
 			]
 		);
@@ -187,7 +196,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 			[
 				'name' => 'so_buttons_typography',
 				'label' => __('Typography', 'OBPress_SpecialOffers'),
-				'selector' => '.obpress-offer-more',
+				'selector' => '.obpress-offer-more, .obpress-so-mob-slide-button',
 			]
 		);
 
@@ -196,7 +205,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 			[
 				'name' => 'border',
 				'label' => __('Border', 'OBPress_SearchBarPlugin'),
-				'selector' => '.obpress-offer-more',
+				'selector' => '.obpress-offer-more, .obpress-so-mob-slide-button',
 			]
 		);
 

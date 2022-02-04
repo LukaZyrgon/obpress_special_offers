@@ -1,5 +1,6 @@
 .obpress-special-offer-holder {
   font-family: "Montserrat", Sans-serif;
+  display: block;
 }
 
 .obpress-special-offer-title p {
@@ -28,7 +29,7 @@
 }
 
 .obpress-swiper .swiper-slide-active .obpress-swiper-image {
-  box-shadow: 0px 14px 24px #BEAD8E33;
+  box-shadow: 0px 14px 24px #bead8e33;
 }
 
 .obpress-swiper .swiper-slide {
@@ -146,7 +147,7 @@ div.obpress-offer-partial-left::before {
   display: flex;
   justify-content: space-between;
   padding: 20px 27px 27px 30px;
-  box-shadow: 0px 14px 54px #BEAD8E33;
+  box-shadow: 0px 14px 54px #bead8e33;
 }
 
 .obpress-offer-description {
@@ -191,7 +192,8 @@ div.obpress-offer-partial-left::before {
   margin-bottom: 0px;
 }
 
-.obpress-offer-number, .obpress-offer-night {
+.obpress-offer-number,
+.obpress-offer-night {
   display: inline-block;
   margin-top: 7px;
 }
@@ -211,7 +213,7 @@ div.obpress-offer-partial-left::before {
 }
 
 .obpress-offer-more {
-  display: flex!important;
+  display: flex !important;
   height: 50px;
   align-items: center;
   justify-content: center;
@@ -231,11 +233,10 @@ div.obpress-offer-partial-left::before {
   background-position: center;
 }
 
-
 .obpress-offer-hotel-name {
   font-size: 14px;
   font-weight: 600;
-  color: #BEAD8E;
+  color: #bead8e;
   margin-bottom: 17px;
   margin-top: 0px;
 }
@@ -252,4 +253,158 @@ div.obpress-offer-partial-left::before {
   font-weight: 500;
   text-decoration: underline;
   line-height: 24px;
+}
+
+.obpress-special-offer-holder-mobile {
+  display: none;
+}
+
+@media (max-width: 1279px) {
+  .obpress-special-offer-holder {
+    display: none;
+  }
+
+  .obpress-special-offer-holder-mobile {
+    display: block;
+    white-space: nowrap;
+    overflow: scroll;
+    padding-right: 10px;
+    font-family: "Montserrat", Sans-serif;
+  }
+
+  .obpress-special-offer-holder-mobile::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .obpress-special-offer-holder-mobile {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .obpress-so-mob-slide {
+    width: 280px;
+    height: 380px;
+    background-color: #fff;
+    margin-left: 28px;
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .obpress-so-mob-partial {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background-color: #000;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    padding: 5px 11px;
+  }
+  
+  .obpress-so-mob-slide-image {
+    width: 100%;
+    height: 190px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .obpress-so-mob-slide-title {
+    width: 220px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    justify-content: center;
+    margin-right: auto;
+    margin-top: -29px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 8px 24px 0px #bead8e38;
+    box-shadow: 0px 8px 24px #bead8e38;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+  }
+
+  .obpress-so-mob-slide-title .offer-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2c2f33;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width:100%; 
+    text-align: center;
+  }
+
+  .obpress-so-mob-slide-title .hotel-name {
+    font-size: 12px;
+    font-weight: bold;
+    color: #BEAD8E;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width:100%; 
+    text-align: center;
+  }
+
+  .obpress-so-mob-slide-desc {
+    display: flex;
+    justify-content: center;
+  }
+
+  .obpress-so-mob-slide-desc p{
+    font-size: 12px;
+    max-width: 171px;
+    width: 100%;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: pre-wrap;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;  
+    line-height: 18px;
+    height: 36px;
+    margin-top: 0px;
+    margin-bottom: 12px;
+  }
+
+  .obpress-so-mob-slide-price-holder p {
+    text-align: center;
+  }
+
+  .obpress-so-mob-slide-price-string {
+    font-weight: 600;
+    font-size: 10px;
+    color: #2C2F33;
+    line-height: 13px;
+    margin: 0;
+  }
+
+  .obpress-so-mob-slide-price-val {
+    font-weight: bold;
+    font-size: 20px;
+    color: #BEAD8E;
+    margin-bottom: 11px;
+    line-height: 24px;
+    margin-top: 0px;
+  }
+
+  .obpress-so-mob-slide-button-holder {
+    text-align: center;
+  }
+
+  .obpress-so-mob-slide-button {
+    padding: 11px 31px;
+    background-color: #000000;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: capitalize;
+    border-width: 0;
+    display: inline-block;
+  }
 }

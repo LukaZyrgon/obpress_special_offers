@@ -5,6 +5,12 @@ jQuery(window).on("elementor/frontend/init", function () {
   elementorFrontend.hooks.addAction(
     "frontend/element_ready/SpecialOffer.default",
     function ($scope, $) {
+      console.log(screen.width);
+      var isMobile = false;
+      if(screen.width < 480) {
+        isMobile = true;
+      }
+
       var swiperSettings = {};
       var swiperSelector = jQuery(".obpress-swiper");
 
@@ -12,9 +18,11 @@ jQuery(window).on("elementor/frontend/init", function () {
       swiperSettings.centeredSlides = swiperSelector.attr(
         "data-centered-slides"
       );
+
       swiperSettings.slidesPerView = swiperSelector.attr(
         "data-slides-per-view"
       );
+
       swiperSettings.spaceBetween = parseInt(
         swiperSelector.attr("data-space-between")
       );
