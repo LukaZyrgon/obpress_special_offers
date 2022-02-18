@@ -1,4 +1,5 @@
 jQuery(window).on("elementor/frontend/init", function () {
+
   //hook name is 'frontend/element_ready/{widget-name}.{skin} - i dont know how skins work yet, so for now presume it will
   //always be 'default', so for example 'frontend/element_ready/slick-slider.default'
   //$scope is a jquery wrapped parent element
@@ -70,7 +71,14 @@ jQuery(window).on("elementor/frontend/init", function () {
           nextEl: ".obpress-swiper .swiper-button-next",
           prevEl: ".obpress-swiper .swiper-button-prev",
         },
+        on: {
+          init: function(){
+            $(".obpress-special-offer-holder").css("opacity", '1');
+          },
+        }
       });
+
+      
 
       swiper.on('init', function(){
         console.log('asd');
