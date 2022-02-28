@@ -1,7 +1,6 @@
 .obpress-special-offer-holder {
   font-family: "Montserrat", Sans-serif;
   display: block;
-  opacity: 0;
 }
 
 .obpress-special-offer-title p {
@@ -103,12 +102,12 @@
   opacity: 0;
 }
 
-/* .obpress-offer-info-holder {
+.obpress-offer-info-holder {
   -webkit-transition: opacity 0.5s ease-in;
   -moz-transition: opacity 0.5s ease-in;
   -o-transition: opacity 0.5s ease-in;
   opacity: 1;
-} */
+}
 
 .obpress-offer-partial {
   color: #fff;

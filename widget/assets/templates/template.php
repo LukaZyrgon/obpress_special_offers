@@ -111,7 +111,7 @@
         </div>
     </div>
     <div class="obpress-special-offer-link-holder">
-        <a href="/packages">Ver todas</a>
+        <a href="/packages">See all</a>
     </div>
 </div>
 
