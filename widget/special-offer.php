@@ -28,7 +28,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 
 	public function get_title()
 	{
-		return __('Special Offers', 'plugin-name');
+		return __('Special Offers', 'OBPress_SpecialOffers');
 	}
 
 	public function get_icon()
@@ -204,7 +204,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 			\Elementor\Group_Control_Border::get_type(),
 			[
 				'name' => 'border',
-				'label' => __('Border', 'OBPress_SearchBarPlugin'),
+				'label' => __('Border', 'OBPress_SpecialOffers'),
 				'selector' => '.obpress-offer-more, .obpress-so-mob-slide-button',
 			]
 		);
@@ -287,7 +287,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_control(
 			'obpress_slider_transition',
 			[
-				'label' => __( 'Slider Transition(seconds)', 'OBPress_SearchBarPlugin' ),
+				'label' => __( 'Slider Transition(seconds)', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => [ 's'],
 				'range' => [
@@ -307,13 +307,13 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_control(
 			'so_slide_pagination',
 			[
-				'label' => __( 'Slider Pagination', 'OBPress_SearchBarPlugin' ),
+				'label' => __( 'Slider Pagination', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'default' => 'lines',
 				'options' => [
-					'lines'  => __( 'Lines', 'plugin-domain' ),
-					'bullets' => __( 'Bullets', 'plugin-domain' ),
-					'disabled' => __( 'Disabled', 'plugin-domain')
+					'lines'  => __( 'Lines', 'OBPress_SpecialOffers' ),
+					'bullets' => __( 'Bullets', 'OBPress_SpecialOffers' ),
+					'disabled' => __( 'Disabled', 'OBPress_SpecialOffers')
 				],
 			]
 		);
@@ -321,14 +321,14 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_control(
 			'so_number_of_slides',
 			[
-				'label' => __( 'Number of Pagination Bullets', 'OBPress_SearchBarPlugin' ),
+				'label' => __( 'Number of Pagination Bullets', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'default' => '5',
 				'options' => [
-					'2'  => __( '2', 'plugin-domain' ),
-					'3' => __( '3', 'plugin-domain' ),
-					'4' => __( '4', 'plugin-domain'),
-					'5' => __( '5', 'plugin-domain')
+					'2'  => __( '2', 'OBPress_SpecialOffers' ),
+					'3' => __( '3', 'OBPress_SpecialOffers' ),
+					'4' => __( '4', 'OBPress_SpecialOffers'),
+					'5' => __( '5', 'OBPress_SpecialOffers')
 				],
 			]
 		);
@@ -349,7 +349,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_control(
 			'obpress_so_pagination_bullet_back_icon',
 			[
-				'label' => __( 'Back Icon', 'text-domain' ),
+				'label' => __( 'Back Icon', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::ICONS,
 			]
 		);
@@ -357,7 +357,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_control(
 			'obpress_so_pagination_bullet_next_icon',
 			[
-				'label' => __( 'Next Icon', 'text-domain' ),
+				'label' => __( 'Next Icon', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::ICONS,
 			]
 		);
@@ -508,6 +508,8 @@ class SpecialOffer extends \Elementor\Widget_Base
 		// var_dump($settings_so['so_number_of_slides']);
 
 		$plugin_directory_path = plugins_url( '', __FILE__ );
+
+		$pagination_type = $settings_so['so_slide_pagination'];
 
 		require_once(WP_PLUGIN_DIR . '/OBPress_SpecialOffers/widget/assets/templates/template.php');
 	}

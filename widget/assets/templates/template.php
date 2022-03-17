@@ -6,14 +6,13 @@
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <?php
-                $slides = $settings_so['so_number_of_slides'];
-                $slide = 0;
+                    $slides = $settings_so['so_number_of_slides'];
+                    $slide = 0;
                 ?>
 
                 <?php if (!empty($package_offers)) : ?>
                     <?php foreach ($package_offers as $key => $package_offer) : ?>
                         <?php foreach ($package_offer as $offer_key => $offer) : ?>
-
                             <?php
                             foreach ($hotels->PropertiesType->Properties as $hotel) {
                                 if ($key == $hotel->HotelRef->HotelCode) {
@@ -26,20 +25,18 @@
                             <div class="swiper-slide">
 
                                 <div class="obpress-swiper-image" style="background-image:url(<?php
-
-                                                                                                if (isset($offer["image"]->ImageItemsType->ImageItems[0]->URL->Address)) {
-                                                                                                    echo $offer["image"]->ImageItemsType->ImageItems[0]->URL->Address;
-                                                                                                } else {
-                                                                                                    echo $plugin_directory_path . '/assets/icons/placeholderNewWhite.svg';
-                                                                                                }
-
-                                                                                                ?>
+                                        if (isset($offer["image"]->ImageItemsType->ImageItems[0]->URL->Address)) {
+                                            echo $offer["image"]->ImageItemsType->ImageItems[0]->URL->Address;
+                                        } else {
+                                            echo $plugin_directory_path . '/assets/icons/placeholderNewWhite.svg';
+                                        }
+                                    ?>
                                 )">
                                 </div>
 
                                 <div class="obpress-offer-info-holder">
                                     <div class="obpress-offer-partial obpress-offer-partial-left">
-                                        <?= 'Pay up to ' . $HotelDescriptiveContents[$key]->MaxPartialPaymentParcel . 'x' ?>
+                                        <?php _e('Pay up to','OBPress_SpecialOffers') ?><?= $HotelDescriptiveContents[$key]->MaxPartialPaymentParcel . 'x' ?> 
                                     </div>
                                     <div class="obpress-offer-info">
                                         <div class="obpress-offer-description">
@@ -54,55 +51,46 @@
                                         </div>
                                         <div class="obpress-offer-price-button">
                                             <div class="obpress-offer-price">
-                                                <p>Starting at <br><span class="obpress-offer-number">
+                                                <p>
+                                                    <?php _e('Starting at','OBPress_SpecialOffers') ?> 
+                                                    <br>
+                                                    <span class="obpress-offer-number">
                                                         <?= Lang_Curr_Functions::ValueAndCurrencyCulture($offer["room_rate"]->Total->AmountBeforeTax, $currencies, $currency, $language) ?>
-                                                    </span><span class="obpress-offer-night">/Night</span></p>
+                                                    </span>
+                                                    <span class="obpress-offer-night">/<?php _e('Night','OBPress_SpecialOffers') ?> </span>
+                                                </p>
                                             </div>
                                             <div class="obpress-offer-button">
-                                                <a class="obpress-offer-more" href="/package?package_id=<?= $offer["rate_plan"]->RatePlanID ?>">See more</a>
+                                                <a class="obpress-offer-more" href="/package?package_id=<?= $offer["rate_plan"]->RatePlanID ?>"><?php _e('See more','OBPress_SpecialOffers') ?> </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                             <?php
-                            // break when enough sldies
+                                // break when enough sldies
+                                $slide++;
 
-                            $slide++;
+                                if ($slide >= $slides) {
+                                    break;
+                                }
+                            ?>
+                        <?php endforeach; ?>
+
+                        <?php
+                            // break when enough sldies
 
                             if ($slide >= $slides) {
                                 break;
                             }
-
-
-                            ?>
-
-
-
-                        <?php endforeach; ?>
-
-                        <?php
-                        // break when enough sldies
-
-                        if ($slide >= $slides) {
-                            break;
-                        }
-
                         ?>
                     <?php endforeach; ?>
                 <?php endif; ?>
             </div>
             <div class="obpress-swiper-nav">
-                <div class="swiper-button-prev obpress-swiper-prev" <?php if (!empty($prevIcon)) {
-                                                                        echo 'style="background-image:<?= ' . $prevIcon . '?>"';
-                                                                    } ?>>
+                <div class="swiper-button-prev obpress-swiper-prev" <?php if (!empty($prevIcon)) echo 'style="background-image:<?= ' . $prevIcon . '?>"';  ?>>
                 </div>
-                <div class="swiper-pagination obpress-swiper-pagination <?php if ($settings_so['so_slide_pagination'] == 'lines') {
-                                                                            echo 'obpress-swiper-lines';
-                                                                        } ?><?php if ($settings_so['so_slide_pagination'] == 'disabled') {
-                                                                                                                                                                        echo 'obpress-swiper-pagination-disabled';
-                                                                                                                                                                    } ?>"></div>
+                <div class="swiper-pagination obpress-swiper-pagination <?= 'obpress-swiper-' . $pagination_type; ?>"></div>
                 <div class="swiper-button-next obpress-swiper-next" <?php if (!empty($nextIcon)) {
                                                                         echo 'style="background-image:<?= ' . $nextIcon . '?>"';
                                                                     } ?>>
@@ -111,7 +99,7 @@
         </div>
     </div>
     <div class="obpress-special-offer-link-holder">
-        <a href="/packages">See all</a>
+        <a href="/packages"><?php _e('See all','OBPress_SpecialOffers') ?> </a>
     </div>
 </div>
 
@@ -131,7 +119,7 @@
                 <div class="obpress-so-mob-slide">
                     <div class="obpress-so-mob-partial-payment">
                         <div class="obpress-so-mob-partial obpressso-mob-partial-left">
-                            <?= 'Pay up to ' . $HotelDescriptiveContents[$key]->MaxPartialPaymentParcel . 'x' ?>
+                            <?php _e('Pay up to','OBPress_SpecialOffers') ?><?= $HotelDescriptiveContents[$key]->MaxPartialPaymentParcel . 'x' ?>
                         </div>                        
                     </div>
                     <div class="obpress-so-mob-slide-image" style="background-image:url(<?php
@@ -156,11 +144,11 @@
                         <p><?= $offer["get_rate_plans"]->RatePlanDescription->Description ?></p>
                     </div>
                     <div class="obpress-so-mob-slide-price-holder">
-                        <p class="obpress-so-mob-slide-price-string">Starting at</p>
+                        <p class="obpress-so-mob-slide-price-string"><?php _e('Starting at','OBPress_SpecialOffers') ?> </p>
                         <p class="obpress-so-mob-slide-price-val"><?= Lang_Curr_Functions::ValueAndCurrencyCulture($offer["room_rate"]->Total->AmountBeforeTax, $currencies, $currency, $language) ?></p>
                     </div>
                     <div class="obpress-so-mob-slide-button-holder">
-                        <a href="/package?package_id=<?= $offer["rate_plan"]->RatePlanID ?>" class="obpress-so-mob-slide-button">View More</a>
+                        <a href="/package?package_id=<?= $offer["rate_plan"]->RatePlanID ?>" class="obpress-so-mob-slide-button"><?php _e('View More','OBPress_SpecialOffers') ?> </a>
                     </div>
                 </div>
             <?php endforeach; ?>
