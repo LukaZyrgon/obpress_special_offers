@@ -42,16 +42,16 @@
   justify-content: center;
 }
 
-.obpress-swiper-prev,
-.obpress-swiper-pagination,
-.obpress-swiper-next {
+div.so-obpress-swiper-prev,
+div.so-obpress-swiper-pagination,
+div.so-obpress-swiper-next {
   position: static;
   display: flex;
   align-items: center;
 }
 
-.obpress-swiper-prev,
-.obpress-swiper-next {
+div.so-obpress-swiper-prev,
+div.so-obpress-swiper-next {
   background-repeat: no-repeat;
   width: 35px;
   height: 35px;
@@ -59,15 +59,20 @@
   margin-top: 0px;
 }
 
-.obpress-swiper-prev {
+div.so-obpress-swiper-prev {
   background-image: url(../icons/back.svg);
   margin-right: 80px;
 }
 
-.obpress-swiper-next {
+div.so-obpress-swiper-next {
   background-image: url(../icons/next.svg);
   margin-left: 80px;
 }
+
+div.so-obpress-swiper-prev::after,
+div.so-obpress-swiper-next::after {
+  content: none;
+} 
 
 .obpress-swiper-lines .swiper-pagination-bullet {
   border-radius: 0px;
@@ -78,12 +83,14 @@
   width: 30px;
 }
 
-.obpress-swiper-disabled {
+.so-obpress-swiper-pagination.obpress-swiper-disabled {
   display: none;
 }
 
 .obpress-swiper-nav .swiper-pagination-bullet {
   margin-right: 10px;
+  background-color: #000;
+  height: 8px;
 }
 
 .obpress-swiper-nav .swiper-pagination-bullet:last-child {
@@ -212,7 +219,13 @@ div.obpress-offer-partial-left::before {
   line-height: 24px;
 }
 
-.obpress-offer-more {
+.obpress-offer-button.custom_width {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+a.obpress-offer-more {
   display: flex !important;
   height: 50px;
   align-items: center;
@@ -224,6 +237,10 @@ div.obpress-offer-partial-left::before {
   font-size: 14px;
   font-weight: bold;
   box-shadow: 0px 14px 24px #bead8e29;
+}
+
+a.obpress-offer-more:hover {
+  color: #fff;
 }
 
 .obpress-swiper-image {

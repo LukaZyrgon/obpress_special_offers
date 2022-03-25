@@ -60,7 +60,7 @@
                                                     <span class="obpress-offer-night">/<?php _e('Night','OBPress_SpecialOffers') ?> </span>
                                                 </p>
                                             </div>
-                                            <div class="obpress-offer-button">
+                                            <div class="obpress-offer-button <?= $settings_so['so_custom_button_width']; ?>">
                                                 <a class="obpress-offer-more" href="/package?package_id=<?= $offer["rate_plan"]->RatePlanID ?>"><?php _e('See more','OBPress_SpecialOffers') ?> </a>
                                             </div>
                                         </div>
@@ -88,11 +88,11 @@
                 <?php endif; ?>
             </div>
             <div class="obpress-swiper-nav">
-                <div class="swiper-button-prev obpress-swiper-prev" <?php if (!empty($prevIcon)) echo 'style="background-image:<?= ' . $prevIcon . '?>"';  ?>>
+                <div class="swiper-button-prev so-obpress-swiper-prev" <?php if (!empty($prevIcon)) echo 'style="background-image: url(' . $prevIcon . ')"';  ?>>
                 </div>
-                <div class="swiper-pagination obpress-swiper-pagination <?= 'obpress-swiper-' . $pagination_type; ?>"></div>
-                <div class="swiper-button-next obpress-swiper-next" <?php if (!empty($nextIcon)) {
-                                                                        echo 'style="background-image:<?= ' . $nextIcon . '?>"';
+                <div class="swiper-pagination so-obpress-swiper-pagination <?= 'obpress-swiper-' . $pagination_type; ?>"></div>
+                <div class="swiper-button-next so-obpress-swiper-next" <?php if (!empty($nextIcon)) {
+                                                                        echo 'style="background-image: url(' . $nextIcon . ')"';
                                                                     } ?>>
                 </div>
             </div>
