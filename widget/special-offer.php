@@ -52,20 +52,24 @@ class SpecialOffer extends \Elementor\Widget_Base
 			]
 		);
 
-		$this->add_control(
+		$this->add_responsive_control(
 			'offer_image_height',
 			[
 				'label' => __( 'Height', 'OBPress_General_Widgets' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
-				'default' => [
-					'size' => 400,
-				],
 				'range' => [
 					'px' => [
 						'max' => 500,
 						'min' => 150,
 						'step' => 1,
 					],
+				],
+				'devices' => [ 'desktop', 'mobile' ],
+				'desktop_default' => [
+					'size' => 400,
+				],
+				'mobile_default' => [
+					'size' => 400,
 				],
 				'render_type' => 'ui',
 				'selectors' => [
@@ -109,12 +113,20 @@ class SpecialOffer extends \Elementor\Widget_Base
 			]
 		);
 
-		$this->add_control(
+		$this->add_responsive_control(
 			'offer_image_ribbon_padding',
 			[
 				'label' => __( 'Ribbon Padding', 'OBPress_General_Widgets' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
-				'default' => [
+				'devices' => [ 'desktop', 'mobile' ],
+				'desktop_default' => [
+					'top' => '10',
+					'right' => '28',
+					'bottom' => '10',
+					'left' => '28',
+					'isLinked' => false
+				],
+				'mobile_default' => [
 					'top' => '10',
 					'right' => '28',
 					'bottom' => '10',
@@ -167,12 +179,16 @@ class SpecialOffer extends \Elementor\Widget_Base
 			]
 		);
 
-		$this->add_control(
+		$this->add_responsive_control(
 			'ribbon_vertical_position',
 			[
 				'label' => __( 'Ribbon Vertical Position', 'OBPress_General_Widgets' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
-				'default' => [
+				'devices' => [ 'desktop', 'mobile' ],
+				'desktop_default' => [
+					'size' => 0,
+				],
+				'mobile_default' => [
 					'size' => 0,
 				],
 				'range' => [
@@ -212,12 +228,16 @@ class SpecialOffer extends \Elementor\Widget_Base
 			]
 		);
 
-		$this->add_control(
+		$this->add_responsive_control(
 			'offer_info_box_width',
 			[
 				'label' => __( 'Width', 'OBPress_General_Widgets' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
-				'default' => [
+				'devices' => [ 'desktop', 'mobile' ],
+				'desktop_default' => [
+					'size' => 85,
+				],
+				'mobile_default' => [
 					'size' => 85,
 				],
 				'range' => [
@@ -234,12 +254,20 @@ class SpecialOffer extends \Elementor\Widget_Base
 			]
 		);
 
-		$this->add_control(
+		$this->add_responsive_control(
 			'offer_info_box_padding',
 			[
 				'label' => __( 'Padding', 'OBPress_General_Widgets' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
-				'default' => [
+				'devices' => [ 'desktop', 'mobile' ],
+				'desktop_default' => [
+					'top' => '20',
+					'right' => '27',
+					'bottom' => '27',
+					'left' => '30',
+					'isLinked' => false
+				],
+				'mobile_default' => [
 					'top' => '20',
 					'right' => '27',
 					'bottom' => '27',
@@ -275,12 +303,14 @@ class SpecialOffer extends \Elementor\Widget_Base
 			]
 		);
 
-		$this->add_control(
+		$this->add_responsive_control(
 			'offer_info_justify_content',
 			[
 				'label' => __( 'Box Horizontal Alignmant', 'OBPress_General_Widgets' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
-				'default' => 'space-between',
+				'devices' => [ 'desktop', 'mobile' ],
+				'desktop_default' => 'space-between',
+				'mobile_default' => 'space-between',
 				'options' => [
 					'space-between'  => __( 'Space Between', 'OBPress_General_Widgets' ),
 					'space-around'  => __( 'Space Around', 'OBPress_General_Widgets' ),
@@ -353,19 +383,29 @@ class SpecialOffer extends \Elementor\Widget_Base
 						'icon' => 'eicon-text-align-right',
 					],
 				],
-				'default' => 'left',
+				'devices' => [ 'desktop', 'mobile' ],
+				'desktop_default' => 'left',
+				'mobile_default' => 'left',
 				'selectors' => [
 					'.obpress-special-offer-holder .obpress-offer-description h5' => 'text-align: {{VALUE}}',
 				],
 			]
 		);
 
-		$this->add_control(
+		$this->add_responsive_control(
 			'offer_name_margin',
 			[
 				'label' => __( 'Offer Name Margin', 'OBPress_General_Widgets' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
-				'default' => [
+				'devices' => [ 'desktop', 'mobile' ],
+				'desktop_default' => [
+					'top' => '0',
+					'right' => '0',
+					'bottom' => '7',
+					'left' => '0',
+					'isLinked' => false
+				],
+				'mobile_default' => [
 					'top' => '0',
 					'right' => '0',
 					'bottom' => '7',
@@ -418,12 +458,20 @@ class SpecialOffer extends \Elementor\Widget_Base
 			]
 		);
 
-		$this->add_control(
+		$this->add_responsive_control(
 			'hotel_name_margin',
 			[
 				'label' => __( 'Hotel Name Margin', 'OBPress_General_Widgets' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
-				'default' => [
+				'devices' => [ 'desktop', 'mobile' ],
+				'desktop_default' => [
+					'top' => '0',
+					'right' => '0',
+					'bottom' => '17',
+					'left' => '0',
+					'isLinked' => false
+				],
+				'mobile_default' => [
 					'top' => '0',
 					'right' => '0',
 					'bottom' => '17',
@@ -495,7 +543,9 @@ class SpecialOffer extends \Elementor\Widget_Base
 						'icon' => 'eicon-text-align-right',
 					],
 				],
-				'default' => 'left',
+				'devices' => [ 'desktop', 'mobile' ],
+				'desktop_default' => 'left',
+				'mobile_default' => 'left',
 				'selectors' => [
 					'.obpress-special-offer-holder .obpress-offer-description p' => 'text-align: {{VALUE}}',
 				],
@@ -578,7 +628,9 @@ class SpecialOffer extends \Elementor\Widget_Base
 						'icon' => 'eicon-text-align-right',
 					],
 				],
-				'default' => 'left',
+				'devices' => [ 'desktop', 'mobile' ],
+				'desktop_default' => 'left',
+				'mobile_default' => 'left',
 				'selectors' => [
 					'.obpress-special-offer-holder .obpress-offer-price p' => 'text-align: {{VALUE}}',
 				],
@@ -662,12 +714,20 @@ class SpecialOffer extends \Elementor\Widget_Base
 			]
 		);
 
-		$this->add_control(
+		$this->add_responsive_control(
 			'offer_price_margin',
 			[
 				'label' => __( 'Offer Price Margin', 'OBPress_General_Widgets' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
-				'default' => [
+				'devices' => [ 'desktop', 'mobile' ],
+				'desktop_default' => [
+					'top' => '7',
+					'right' => '0',
+					'bottom' => '0',
+					'left' => '0',
+					'isLinked' => false
+				],
+				'mobile_default' => [
 					'top' => '7',
 					'right' => '0',
 					'bottom' => '0',
@@ -712,7 +772,9 @@ class SpecialOffer extends \Elementor\Widget_Base
 						'icon' => 'eicon-text-align-right',
 					],
 				],
-				'default' => 'center',
+				'devices' => [ 'desktop', 'mobile' ],
+				'desktop_default' => 'center',
+				'mobile_default' => 'center',
 				'selectors' => [
 					'.obpress-special-offer-holder .obpress-offer-button.custom_width' => 'align-self: {{VALUE}}',
 				],
@@ -722,7 +784,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 			]
 		);
 
-		$this->add_control(
+		$this->add_responsive_control(
 			'custom_button_width',
 			[
 				'label' => esc_html__( 'Width', 'OBPress_General_Widgets' ),
@@ -735,7 +797,12 @@ class SpecialOffer extends \Elementor\Widget_Base
 						'step' => 1,
 					],
 				],
-				'default' => [
+				'devices' => [ 'desktop', 'mobile' ],
+				'desktop_default' => [
+					'unit' => '%',
+					'size' => 100,
+				],
+				'mobile_default' => [
 					'unit' => '%',
 					'size' => 100,
 				],
@@ -748,7 +815,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 			]
 		);
 
-		$this->add_control(
+		$this->add_responsive_control(
 			'custom_button_height',
 			[
 				'label' => esc_html__( 'Height', 'OBPress_General_Widgets' ),
@@ -761,7 +828,12 @@ class SpecialOffer extends \Elementor\Widget_Base
 						'step' => 1,
 					],
 				],
-				'default' => [
+				'devices' => [ 'desktop', 'mobile' ],
+				'desktop_default' => [
+					'unit' => 'px',
+					'size' => 50,
+				],
+				'mobile_default' => [
 					'unit' => 'px',
 					'size' => 50,
 				],
@@ -1017,7 +1089,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 			]
 		);
 
-		$this->add_control(
+		$this->add_responsive_control(
 			'so_slider_previous_nest_btn_width',
 			[
 				'label' => __( 'Button Width', 'OBPress_General_Widgets' ),
@@ -1030,7 +1102,12 @@ class SpecialOffer extends \Elementor\Widget_Base
 						'step' => 1,
 					],
 				],
-				'default' => [
+				'devices' => [ 'desktop', 'mobile' ],
+				'desktop_default' => [
+					'unit' => 'px',
+					'size' => 35,
+				],
+				'mobile_default' => [
 					'unit' => 'px',
 					'size' => 35,
 				],
@@ -1040,7 +1117,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 			]
 		);
 
-		$this->add_control(
+		$this->add_responsive_control(
 			'so_slider_previous_nest_btn_height',
 			[
 				'label' => __( 'Button Height', 'OBPress_General_Widgets' ),
@@ -1053,7 +1130,12 @@ class SpecialOffer extends \Elementor\Widget_Base
 						'step' => 1,
 					],
 				],
-				'default' => [
+				'devices' => [ 'desktop', 'mobile' ],
+				'desktop_default' => [
+					'unit' => 'px',
+					'size' => 35,
+				],
+				'mobile_default' => [
 					'unit' => 'px',
 					'size' => 35,
 				],
@@ -1063,12 +1145,20 @@ class SpecialOffer extends \Elementor\Widget_Base
 			]
 		);
 
-		$this->add_control(
+		$this->add_responsive_control(
 			'so_previous_button_margin',
 			[
 				'label' => __( 'Previous Button Margin', 'OBPress_General_Widgets' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
-				'default' => [
+				'devices' => [ 'desktop', 'mobile' ],
+				'desktop_default' => [
+					'top' => '0',
+					'right' => '80',
+					'bottom' => '0',
+					'left' => '0',
+					'isLinked' => false
+				],
+				'mobile_default' => [
 					'top' => '0',
 					'right' => '80',
 					'bottom' => '0',
@@ -1082,12 +1172,20 @@ class SpecialOffer extends \Elementor\Widget_Base
 			]
 		);
 
-		$this->add_control(
+		$this->add_responsive_control(
 			'so_next_button_margin',
 			[
 				'label' => __( 'Nest Button Margin', 'OBPress_General_Widgets' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
-				'default' => [
+				'devices' => [ 'desktop', 'mobile' ],
+				'desktop_default' => [
+					'top' => '0',
+					'right' => '0',
+					'bottom' => '0',
+					'left' => '80',
+					'isLinked' => false
+				],
+				'mobile_default' => [
 					'top' => '0',
 					'right' => '0',
 					'bottom' => '0',
@@ -1117,12 +1215,14 @@ class SpecialOffer extends \Elementor\Widget_Base
 			]
 		);
 
-		$this->add_control(
+		$this->add_responsive_control(
 			'so_slide_pagination',
 			[
 				'label' => __( 'Slider Pagination', 'OBPress_General_Widgets' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
-				'default' => 'lines',
+				'devices' => [ 'desktop', 'mobile' ],
+				'desktop_default' => 'lines',
+				'mobile_default' => 'lines',
 				'options' => [
 					'lines'  => __( 'Lines', 'OBPress_General_Widgets' ),
 					'bullets' => __( 'Bullets', 'OBPress_General_Widgets' ),
@@ -1131,12 +1231,14 @@ class SpecialOffer extends \Elementor\Widget_Base
 			]
 		);
 
-		$this->add_control(
+		$this->add_responsive_control(
 			'so_number_of_slides',
 			[
 				'label' => __( 'Number of Pagination Bullets', 'OBPress_General_Widgets' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
-				'default' => '5',
+				'devices' => [ 'desktop', 'mobile' ],
+				'desktop_default' => '5',
+				'mobile_default' => '5',
 				'options' => [
 					'2'  => __( '2', 'OBPress_General_Widgets' ),
 					'3' => __( '3', 'OBPress_General_Widgets' ),
@@ -1159,12 +1261,20 @@ class SpecialOffer extends \Elementor\Widget_Base
 			]
 		);
 
-		$this->add_control(
+		$this->add_responsive_control(
 			'so_pagination_margin',
 			[
 				'label' => __( 'Pagination Margin', 'OBPress_General_Widgets' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
-				'default' => [
+				'devices' => [ 'desktop', 'mobile' ],
+				'desktop_default' => [
+					'top' => '0',
+					'right' => '10',
+					'bottom' => '0',
+					'left' => '0',
+					'isLinked' => false
+				],
+				'mobile_default' => [
 					'top' => '0',
 					'right' => '10',
 					'bottom' => '0',
@@ -1178,7 +1288,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 			]
 		);
 
-		$this->add_control(
+		$this->add_responsive_control(
 			'so_pagination_active_width',
 			[
 				'label' => __( 'Pagination Active Width', 'OBPress_General_Widgets' ),
@@ -1191,7 +1301,12 @@ class SpecialOffer extends \Elementor\Widget_Base
 						'step' => 1,
 					],
 				],
-				'default' => [
+				'devices' => [ 'desktop', 'mobile' ],
+				'desktop_default' => [
+					'unit' => 'px',
+					'size' => 30,
+				],
+				'mobile_default' => [
 					'unit' => 'px',
 					'size' => 30,
 				],
@@ -1201,7 +1316,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 			]
 		);
 
-		$this->add_control(
+		$this->add_responsive_control(
 			'so_pagination_inactive_width',
 			[
 				'label' => __( 'Pagination Width', 'OBPress_General_Widgets' ),
@@ -1214,7 +1329,12 @@ class SpecialOffer extends \Elementor\Widget_Base
 						'step' => 1,
 					],
 				],
-				'default' => [
+				'devices' => [ 'desktop', 'mobile' ],
+				'desktop_default' => [
+					'unit' => 'px',
+					'size' => 20,
+				],
+				'mobile_default' => [
 					'unit' => 'px',
 					'size' => 20,
 				],
@@ -1224,7 +1344,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 			]
 		);
 
-		$this->add_control(
+		$this->add_responsive_control(
 			'so_pagination_height',
 			[
 				'label' => __( 'Pagination Height', 'OBPress_General_Widgets' ),
@@ -1237,7 +1357,12 @@ class SpecialOffer extends \Elementor\Widget_Base
 						'step' => 1,
 					],
 				],
-				'default' => [
+				'devices' => [ 'desktop', 'mobile' ],
+				'desktop_default' => [
+					'unit' => 'px',
+					'size' => 8,
+				],
+				'mobile_default' => [
 					'unit' => 'px',
 					'size' => 8,
 				],
@@ -1257,12 +1382,20 @@ class SpecialOffer extends \Elementor\Widget_Base
 			]
 		);
 
-		$this->add_control(
+		$this->add_responsive_control(
 			'so_see_all_margin',
 			[
 				'label' => __( 'Margin', 'OBPress_General_Widgets' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
-				'default' => [
+				'devices' => [ 'desktop', 'mobile' ],
+				'desktop_default' => [
+					'top' => '28',
+					'right' => '0',
+					'bottom' => '0',
+					'left' => '0',
+					'isLinked' => false
+				],
+				'mobile_default' => [
 					'top' => '28',
 					'right' => '0',
 					'bottom' => '0',
@@ -1295,7 +1428,9 @@ class SpecialOffer extends \Elementor\Widget_Base
 						'icon' => 'eicon-text-align-right',
 					],
 				],
-				'default' => 'center',
+				'devices' => [ 'desktop', 'mobile' ],
+				'desktop_default' => 'center',
+				'mobile_default' => 'center',
 				'selectors' => [
 					'.obpress-special-offer-holder .obpress-special-offer-link-holder' => 'justify-content: {{VALUE}}',
 				],
