@@ -28,7 +28,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 
 	public function get_title()
 	{
-		return __('Special Offers', 'OBPress_General_Widgets');
+		return __('Special Offers', 'OBPress_SpecialOffers');
 	}
 
 	public function get_icon()
@@ -47,7 +47,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->start_controls_section(
 			'image_section',
 			[
-				'label' => __('Image Section', 'OBPress_General_Widgets'),
+				'label' => __('Image Section', 'OBPress_SpecialOffers'),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -55,7 +55,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_responsive_control(
 			'offer_image_height',
 			[
-				'label' => __( 'Height', 'OBPress_General_Widgets' ),
+				'label' => __( 'Height', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -82,7 +82,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 			\Elementor\Group_Control_Box_Shadow::get_type(),
 			[
 				'name' => 'offer_image_box_shadow',
-				'label' => esc_html__( 'Box Shadow', 'OBPress_General_Widgets' ),
+				'label' => esc_html__( 'Box Shadow', 'OBPress_SpecialOffers' ),
 				'selector' => '.obpress-special-offer-holder .obpress-swiper .swiper-slide-active .obpress-swiper-image',
 				'fields_options' => [
 					'box_shadow_type' => [ 
@@ -103,7 +103,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_control(
 			'offer_image_ribbon_background_color',
 			[
-				'label' => __('Ribbon Backgroung Color', 'OBPress_General_Widgets'),
+				'label' => __('Ribbon Backgroung Color', 'OBPress_SpecialOffers'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'input_type' => 'color',
 				'default' => '#000',
@@ -116,7 +116,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_responsive_control(
 			'offer_image_ribbon_padding',
 			[
-				'label' => __( 'Ribbon Padding', 'OBPress_General_Widgets' ),
+				'label' => __( 'Ribbon Padding', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'devices' => [ 'desktop', 'mobile' ],
 				'desktop_default' => [
@@ -143,7 +143,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_control(
 			'offer_image_ribbon_color',
 			[
-				'label' => __('Ribbon Color', 'OBPress_General_Widgets'),
+				'label' => __('Ribbon Color', 'OBPress_SpecialOffers'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'input_type' => 'color',
 				'default' => '#fff',
@@ -157,7 +157,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'offer_image_ribbon_typography',
-				'label' => __('Ribbon Typography', 'OBPress_General_Widgets'),
+				'label' => __('Ribbon Typography', 'OBPress_SpecialOffers'),
 				'selector' => '.obpress-special-offer-holder div.obpress-offer-partial-left',
 				'fields_options' => [
 					'typography' => [
@@ -182,7 +182,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_responsive_control(
 			'ribbon_vertical_position',
 			[
-				'label' => __( 'Ribbon Vertical Position', 'OBPress_General_Widgets' ),
+				'label' => __( 'Ribbon Vertical Position', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'devices' => [ 'desktop', 'mobile' ],
 				'desktop_default' => [
@@ -210,7 +210,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->start_controls_section(
 			'info_box_section',
 			[
-				'label' => __('Info Section', 'OBPress_General_Widgets'),
+				'label' => __('Info Section', 'OBPress_SpecialOffers'),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -218,7 +218,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_control(
 			'offer_info_box_bg_color',
 			[
-				'label' => __('Background Color', 'OBPress_General_Widgets'),
+				'label' => __('Background Color', 'OBPress_SpecialOffers'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'input_type' => 'color',
 				'default' => '#fff',
@@ -231,7 +231,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_responsive_control(
 			'offer_info_box_width',
 			[
-				'label' => __( 'Width', 'OBPress_General_Widgets' ),
+				'label' => __( 'Width', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'devices' => [ 'desktop', 'mobile' ],
 				'desktop_default' => [
@@ -257,7 +257,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_responsive_control(
 			'offer_info_box_padding',
 			[
-				'label' => __( 'Padding', 'OBPress_General_Widgets' ),
+				'label' => __( 'Padding', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'devices' => [ 'desktop', 'mobile' ],
 				'desktop_default' => [
@@ -285,7 +285,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 			\Elementor\Group_Control_Box_Shadow::get_type(),
 			[
 				'name' => 'offer_info_box_shadow',
-				'label' => esc_html__( 'Box Shadow', 'OBPress_General_Widgets' ),
+				'label' => esc_html__( 'Box Shadow', 'OBPress_SpecialOffers' ),
 				'selector' => '.obpress-special-offer-holder .obpress-offer-info',
 				'fields_options' => [
 					'box_shadow_type' => [ 
@@ -306,18 +306,18 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_responsive_control(
 			'offer_info_justify_content',
 			[
-				'label' => __( 'Box Horizontal Alignmant', 'OBPress_General_Widgets' ),
+				'label' => __( 'Box Horizontal Alignmant', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'devices' => [ 'desktop', 'mobile' ],
 				'desktop_default' => 'space-between',
 				'mobile_default' => 'space-between',
 				'options' => [
-					'space-between'  => __( 'Space Between', 'OBPress_General_Widgets' ),
-					'space-around'  => __( 'Space Around', 'OBPress_General_Widgets' ),
-					'space-evenly'  => __( 'Space Evenly', 'OBPress_General_Widgets' ),
-					'flex-start'  => __( 'Flex Start', 'OBPress_General_Widgets' ),
-					'center' => __( 'Center', 'OBPress_General_Widgets' ),
-					'flex-end'  => __( 'Flex End', 'OBPress_General_Widgets' ),
+					'space-between'  => __( 'Space Between', 'OBPress_SpecialOffers' ),
+					'space-around'  => __( 'Space Around', 'OBPress_SpecialOffers' ),
+					'space-evenly'  => __( 'Space Evenly', 'OBPress_SpecialOffers' ),
+					'flex-start'  => __( 'Flex Start', 'OBPress_SpecialOffers' ),
+					'center' => __( 'Center', 'OBPress_SpecialOffers' ),
+					'flex-end'  => __( 'Flex End', 'OBPress_SpecialOffers' ),
 				],
 				'selectors' => [
 					'.obpress-special-offer-holder .obpress-offer-info' => 'justify-content: {{offer_info_justify_content}}'
@@ -328,7 +328,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_control(
 			'offer_name_color',
 			[
-				'label' => __('Offer Name Color', 'OBPress_General_Widgets'),
+				'label' => __('Offer Name Color', 'OBPress_SpecialOffers'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'input_type' => 'color',
 				'default' => '#222222',
@@ -342,7 +342,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'offer_name_typography',
-				'label' => __('Offer Name Typography', 'OBPress_General_Widgets'),
+				'label' => __('Offer Name Typography', 'OBPress_SpecialOffers'),
 				'selector' => '.obpress-special-offer-holder .obpress-offer-description h5',
 				'fields_options' => [
 					'typography' => [
@@ -367,19 +367,19 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_responsive_control(
 			'offer_name_alignment',
 			[
-				'label' => __( 'Offer Name Alignment', 'OBPress_General_Widgets' ),
+				'label' => __( 'Offer Name Alignment', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'OBPress_General_Widgets' ),
+						'title' => __( 'Left', 'OBPress_SpecialOffers' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'OBPress_General_Widgets' ),
+						'title' => __( 'Center', 'OBPress_SpecialOffers' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'OBPress_General_Widgets' ),
+						'title' => __( 'Right', 'OBPress_SpecialOffers' ),
 						'icon' => 'eicon-text-align-right',
 					],
 				],
@@ -395,7 +395,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_responsive_control(
 			'offer_name_margin',
 			[
-				'label' => __( 'Offer Name Margin', 'OBPress_General_Widgets' ),
+				'label' => __( 'Offer Name Margin', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'devices' => [ 'desktop', 'mobile' ],
 				'desktop_default' => [
@@ -422,7 +422,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_control(
 			'hotel_name_color',
 			[
-				'label' => __('Hotel Name Color', 'OBPress_General_Widgets'),
+				'label' => __('Hotel Name Color', 'OBPress_SpecialOffers'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'input_type' => 'color',
 				'default' => '#BEAD8E',
@@ -436,7 +436,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'hotel_name_typography',
-				'label' => __('Hotel Name Typography', 'OBPress_General_Widgets'),
+				'label' => __('Hotel Name Typography', 'OBPress_SpecialOffers'),
 				'selector' => '.obpress-special-offer-holder .obpress-offer-hotel-name',
 				'fields_options' => [
 					'typography' => [
@@ -461,7 +461,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_responsive_control(
 			'hotel_name_margin',
 			[
-				'label' => __( 'Hotel Name Margin', 'OBPress_General_Widgets' ),
+				'label' => __( 'Hotel Name Margin', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'devices' => [ 'desktop', 'mobile' ],
 				'desktop_default' => [
@@ -488,7 +488,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_control(
 			'offer_description_color',
 			[
-				'label' => __('Offer Description Color', 'OBPress_General_Widgets'),
+				'label' => __('Offer Description Color', 'OBPress_SpecialOffers'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'input_type' => 'color',
 				'default' => '#2c2f33',
@@ -502,7 +502,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'offer_description_typography',
-				'label' => __('Offer Description Typography', 'OBPress_General_Widgets'),
+				'label' => __('Offer Description Typography', 'OBPress_SpecialOffers'),
 				'selector' => '.obpress-special-offer-holder .obpress-offer-description p',
 				'fields_options' => [
 					'typography' => [
@@ -527,19 +527,19 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_responsive_control(
 			'offer_description_alignment',
 			[
-				'label' => __( 'Decription Alignment', 'OBPress_General_Widgets' ),
+				'label' => __( 'Decription Alignment', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'OBPress_General_Widgets' ),
+						'title' => __( 'Left', 'OBPress_SpecialOffers' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'OBPress_General_Widgets' ),
+						'title' => __( 'Center', 'OBPress_SpecialOffers' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'OBPress_General_Widgets' ),
+						'title' => __( 'Right', 'OBPress_SpecialOffers' ),
 						'icon' => 'eicon-text-align-right',
 					],
 				],
@@ -558,7 +558,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->start_controls_section(
 			'so_button_section',
 			[
-				'label' => __('Price And Button', 'OBPress_General_Widgets'),
+				'label' => __('Price And Button', 'OBPress_SpecialOffers'),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -566,7 +566,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_control(
 			'offer_price_message_color',
 			[
-				'label' => __('Price Message Color', 'OBPress_General_Widgets'),
+				'label' => __('Price Message Color', 'OBPress_SpecialOffers'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'input_type' => 'color',
 				'default' => '#2c2f33',
@@ -580,7 +580,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'offer_price_message_typography',
-				'label' => __('Price Message Typography', 'OBPress_General_Widgets'),
+				'label' => __('Price Message Typography', 'OBPress_SpecialOffers'),
 				'selector' => '.obpress-special-offer-holder .obpress-offer-price p',
 				'fields_options' => [
 					'typography' => [
@@ -612,19 +612,19 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_responsive_control(
 			'offer_price_message_alignment',
 			[
-				'label' => __( 'Price Message Alignment', 'OBPress_General_Widgets' ),
+				'label' => __( 'Price Message Alignment', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'OBPress_General_Widgets' ),
+						'title' => __( 'Left', 'OBPress_SpecialOffers' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'OBPress_General_Widgets' ),
+						'title' => __( 'Center', 'OBPress_SpecialOffers' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'OBPress_General_Widgets' ),
+						'title' => __( 'Right', 'OBPress_SpecialOffers' ),
 						'icon' => 'eicon-text-align-right',
 					],
 				],
@@ -640,7 +640,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_control(
 			'offer_price_color',
 			[
-				'label' => __('Price Color', 'OBPress_General_Widgets'),
+				'label' => __('Price Color', 'OBPress_SpecialOffers'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'input_type' => 'color',
 				'default' => '#bead8e',
@@ -654,7 +654,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'offer_price_typography',
-				'label' => __('Price Typography', 'OBPress_General_Widgets'),
+				'label' => __('Price Typography', 'OBPress_SpecialOffers'),
 				'selector' => '.obpress-special-offer-holder .obpress-offer-number',
 				'fields_options' => [
 					'typography' => [
@@ -686,7 +686,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'offer_price_night_typography',
-				'label' => __('Night Typography', 'OBPress_General_Widgets'),
+				'label' => __('Night Typography', 'OBPress_SpecialOffers'),
 				'selector' => '.obpress-special-offer-holder .obpress-offer-night',
 				'fields_options' => [
 					'typography' => [
@@ -717,7 +717,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_responsive_control(
 			'offer_price_margin',
 			[
-				'label' => __( 'Offer Price Margin', 'OBPress_General_Widgets' ),
+				'label' => __( 'Offer Price Margin', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'devices' => [ 'desktop', 'mobile' ],
 				'desktop_default' => [
@@ -744,10 +744,10 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_control(
 			'so_custom_button_width',
 			[
-				'label' => esc_html__( 'Custom Button Width And Height', 'OBPress_General_Widgets' ),
+				'label' => esc_html__( 'Custom Button Width And Height', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
-				'label_on' => esc_html__( 'Show', 'OBPress_General_Widgets' ),
-				'label_off' => esc_html__( 'Hide', 'OBPress_General_Widgets' ),
+				'label_on' => esc_html__( 'Show', 'OBPress_SpecialOffers' ),
+				'label_off' => esc_html__( 'Hide', 'OBPress_SpecialOffers' ),
 				'return_value' => 'custom_width',
 				'default' => '',
 			]
@@ -756,19 +756,19 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_responsive_control(
 			'button_alignment',
 			[
-				'label' => __( 'Alignment', 'OBPress_General_Widgets' ),
+				'label' => __( 'Alignment', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::CHOOSE,
 				'options' => [
 					'flex-start' => [
-						'title' => __( 'Left', 'OBPress_General_Widgets' ),
+						'title' => __( 'Left', 'OBPress_SpecialOffers' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'OBPress_General_Widgets' ),
+						'title' => __( 'Center', 'OBPress_SpecialOffers' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'flex-end' => [
-						'title' => __( 'Right', 'OBPress_General_Widgets' ),
+						'title' => __( 'Right', 'OBPress_SpecialOffers' ),
 						'icon' => 'eicon-text-align-right',
 					],
 				],
@@ -787,7 +787,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_responsive_control(
 			'custom_button_width',
 			[
-				'label' => esc_html__( 'Width', 'OBPress_General_Widgets' ),
+				'label' => esc_html__( 'Width', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => [ '%' ],
 				'range' => [
@@ -818,7 +818,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_responsive_control(
 			'custom_button_height',
 			[
-				'label' => esc_html__( 'Height', 'OBPress_General_Widgets' ),
+				'label' => esc_html__( 'Height', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -849,7 +849,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_control(
 			'so_button_bg_color',
 			[
-				'label' => __('Button Background Color', 'OBPress_General_Widgets'),
+				'label' => __('Button Background Color', 'OBPress_SpecialOffers'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'input_type' => 'color',
 				'default' => '#000',
@@ -862,7 +862,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_control(
 			'so_button_color',
 			[
-				'label' => __('Button Color', 'OBPress_General_Widgets'),
+				'label' => __('Button Color', 'OBPress_SpecialOffers'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'input_type' => 'color',
 				'default' => '#fff',
@@ -876,7 +876,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'so_button_typography',
-				'label' => __('Button Typography', 'OBPress_General_Widgets'),
+				'label' => __('Button Typography', 'OBPress_SpecialOffers'),
 				'selector' => '.obpress-special-offer-holder a.obpress-offer-more',
 				'fields_options' => [
 					'typography' => [
@@ -901,7 +901,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_control(
 			'so_button_bg_hover_color',
 			[
-				'label' => __('Button Background Hover Color', 'OBPress_General_Widgets'),
+				'label' => __('Button Background Hover Color', 'OBPress_SpecialOffers'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'input_type' => 'color',
 				'default' => '#000',
@@ -914,7 +914,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_control(
 			'so_button_hover_color',
 			[
-				'label' => __('Button Hover Color', 'OBPress_General_Widgets'),
+				'label' => __('Button Hover Color', 'OBPress_SpecialOffers'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'input_type' => 'color',
 				'default' => '#fff',
@@ -928,7 +928,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 			\Elementor\Group_Control_Border::get_type(),
 			[
 				'name' => 'so_buuton_border',
-				'label' => __( 'Button Border', 'OBPress_General_Widgets' ),
+				'label' => __( 'Button Border', 'OBPress_SpecialOffers' ),
 				'fields_options' => [
 					'border' => [
 						'default' => 'solid',
@@ -953,7 +953,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_control(
 			'so_button_hover_border_color',
 			[
-				'label' => __('Button Hover Border Color', 'OBPress_General_Widgets'),
+				'label' => __('Button Hover Border Color', 'OBPress_SpecialOffers'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'input_type' => 'color',
 				'default' => '#000',
@@ -966,7 +966,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_control(
 			'so_button_hover_transition',
 			[
-				'label' => __( 'Button Transition', 'OBPress_General_Widgets' ),
+				'label' => __( 'Button Transition', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 0.3,
@@ -989,7 +989,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->start_controls_section(
 			'so_slider_section',
 			[
-				'label' => __('Slider', 'OBPress_General_Widgets'),
+				'label' => __('Slider', 'OBPress_SpecialOffers'),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -997,10 +997,10 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_control(
 			'so_allow_loop',
 			[
-				'label' => __('Allow Image Looping', 'OBPress_General_Widgets'),
+				'label' => __('Allow Image Looping', 'OBPress_SpecialOffers'),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
-				'label_on' => __('On', 'OBPress_General_Widgets'),
-				'label_off' => __('Off', 'OBPress_General_Widgets'),
+				'label_on' => __('On', 'OBPress_SpecialOffers'),
+				'label_off' => __('Off', 'OBPress_SpecialOffers'),
 				'return_value' => 'true',
 				'default' => 'true',
 			]
@@ -1009,10 +1009,10 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_control(
 			'so_center_slides',
 			[
-				'label' => __('Centered Slides', 'OBPress_General_Widgets'),
+				'label' => __('Centered Slides', 'OBPress_SpecialOffers'),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
-				'label_on' => __('On', 'OBPress_General_Widgets'),
-				'label_off' => __('Off', 'OBPress_General_Widgets'),
+				'label_on' => __('On', 'OBPress_SpecialOffers'),
+				'label_off' => __('Off', 'OBPress_SpecialOffers'),
 				'return_value' => 'true',
 				'default' => 'true',
 			]
@@ -1021,7 +1021,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_control(
 			'so_slides_per_view',
 			[
-				'label' => __('Slides Per View', 'OBPress_General_Widgets'),
+				'label' => __('Slides Per View', 'OBPress_SpecialOffers'),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => ['slides'],
 				'range' => [
@@ -1041,7 +1041,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_control(
 			'so_slider_space_between',
 			[
-				'label' => __( 'Space Between Slides', 'OBPress_General_Widgets' ),
+				'label' => __( 'Space Between Slides', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => [ 'px'],
 				'range' => [
@@ -1061,7 +1061,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_control(
 			'obpress_slider_transition',
 			[
-				'label' => __( 'Slider Transition(seconds)', 'OBPress_General_Widgets' ),
+				'label' => __( 'Slider Transition(seconds)', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => [ 's'],
 				'range' => [
@@ -1084,7 +1084,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->start_controls_section(
 			'so_pagination_section',
 			[
-				'label' => __('Pagination And Buttons', 'OBPress_General_Widgets'),
+				'label' => __('Pagination And Buttons', 'OBPress_SpecialOffers'),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -1092,7 +1092,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_responsive_control(
 			'so_slider_previous_nest_btn_width',
 			[
-				'label' => __( 'Button Width', 'OBPress_General_Widgets' ),
+				'label' => __( 'Button Width', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -1120,7 +1120,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_responsive_control(
 			'so_slider_previous_nest_btn_height',
 			[
-				'label' => __( 'Button Height', 'OBPress_General_Widgets' ),
+				'label' => __( 'Button Height', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -1148,7 +1148,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_responsive_control(
 			'so_previous_button_margin',
 			[
-				'label' => __( 'Previous Button Margin', 'OBPress_General_Widgets' ),
+				'label' => __( 'Previous Button Margin', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'devices' => [ 'desktop', 'mobile' ],
 				'desktop_default' => [
@@ -1175,7 +1175,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_responsive_control(
 			'so_next_button_margin',
 			[
-				'label' => __( 'Nest Button Margin', 'OBPress_General_Widgets' ),
+				'label' => __( 'Nest Button Margin', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'devices' => [ 'desktop', 'mobile' ],
 				'desktop_default' => [
@@ -1202,7 +1202,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_control(
 			'obpress_so_pagination_bullet_back_icon',
 			[
-				'label' => __( 'Back Icon', 'OBPress_General_Widgets' ),
+				'label' => __( 'Back Icon', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::ICONS,
 			]
 		);
@@ -1210,7 +1210,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_control(
 			'obpress_so_pagination_bullet_next_icon',
 			[
-				'label' => __( 'Next Icon', 'OBPress_General_Widgets' ),
+				'label' => __( 'Next Icon', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::ICONS,
 			]
 		);
@@ -1218,15 +1218,15 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_responsive_control(
 			'so_slide_pagination',
 			[
-				'label' => __( 'Slider Pagination', 'OBPress_General_Widgets' ),
+				'label' => __( 'Slider Pagination', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'devices' => [ 'desktop', 'mobile' ],
 				'desktop_default' => 'lines',
 				'mobile_default' => 'lines',
 				'options' => [
-					'lines'  => __( 'Lines', 'OBPress_General_Widgets' ),
-					'bullets' => __( 'Bullets', 'OBPress_General_Widgets' ),
-					'disabled' => __( 'Disabled', 'OBPress_General_Widgets')
+					'lines'  => __( 'Lines', 'OBPress_SpecialOffers' ),
+					'bullets' => __( 'Bullets', 'OBPress_SpecialOffers' ),
+					'disabled' => __( 'Disabled', 'OBPress_SpecialOffers')
 				],
 			]
 		);
@@ -1234,16 +1234,16 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_responsive_control(
 			'so_number_of_slides',
 			[
-				'label' => __( 'Number of Pagination Bullets', 'OBPress_General_Widgets' ),
+				'label' => __( 'Number of Pagination Bullets', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'devices' => [ 'desktop', 'mobile' ],
 				'desktop_default' => '5',
 				'mobile_default' => '5',
 				'options' => [
-					'2'  => __( '2', 'OBPress_General_Widgets' ),
-					'3' => __( '3', 'OBPress_General_Widgets' ),
-					'4' => __( '4', 'OBPress_General_Widgets'),
-					'5' => __( '5', 'OBPress_General_Widgets')
+					'2'  => __( '2', 'OBPress_SpecialOffers' ),
+					'3' => __( '3', 'OBPress_SpecialOffers' ),
+					'4' => __( '4', 'OBPress_SpecialOffers'),
+					'5' => __( '5', 'OBPress_SpecialOffers')
 				],
 			]
 		);
@@ -1251,7 +1251,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_control(
 			'obpress_so_pagination_bullet_color',
 			[
-				'label' => __('Pagination Bullet Color', 'OBPress_General_Widgets'),
+				'label' => __('Pagination Bullet Color', 'OBPress_SpecialOffers'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'input_type' => 'color',
 				'default' => '#000',
@@ -1264,7 +1264,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_responsive_control(
 			'so_pagination_margin',
 			[
-				'label' => __( 'Pagination Margin', 'OBPress_General_Widgets' ),
+				'label' => __( 'Pagination Margin', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'devices' => [ 'desktop', 'mobile' ],
 				'desktop_default' => [
@@ -1291,7 +1291,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_responsive_control(
 			'so_pagination_active_width',
 			[
-				'label' => __( 'Pagination Active Width', 'OBPress_General_Widgets' ),
+				'label' => __( 'Pagination Active Width', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -1319,7 +1319,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_responsive_control(
 			'so_pagination_inactive_width',
 			[
-				'label' => __( 'Pagination Width', 'OBPress_General_Widgets' ),
+				'label' => __( 'Pagination Width', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -1347,7 +1347,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_responsive_control(
 			'so_pagination_height',
 			[
-				'label' => __( 'Pagination Height', 'OBPress_General_Widgets' ),
+				'label' => __( 'Pagination Height', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -1377,7 +1377,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->start_controls_section(
 			'so_see_all_button_section',
 			[
-				'label' => __('See All Section', 'OBPress_General_Widgets'),
+				'label' => __('See All Section', 'OBPress_SpecialOffers'),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -1385,7 +1385,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_responsive_control(
 			'so_see_all_margin',
 			[
-				'label' => __( 'Margin', 'OBPress_General_Widgets' ),
+				'label' => __( 'Margin', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'devices' => [ 'desktop', 'mobile' ],
 				'desktop_default' => [
@@ -1412,19 +1412,19 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_responsive_control(
 			'so_see_all_justify_content',
 			[
-				'label' => __( 'Horizontal Alignment', 'OBPress_General_Widgets' ),
+				'label' => __( 'Horizontal Alignment', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::CHOOSE,
 				'options' => [
 					'flex-start' => [
-						'title' => __( 'Left', 'OBPress_General_Widgets' ),
+						'title' => __( 'Left', 'OBPress_SpecialOffers' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'OBPress_General_Widgets' ),
+						'title' => __( 'Center', 'OBPress_SpecialOffers' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'flex-end' => [
-						'title' => __( 'Right', 'OBPress_General_Widgets' ),
+						'title' => __( 'Right', 'OBPress_SpecialOffers' ),
 						'icon' => 'eicon-text-align-right',
 					],
 				],
@@ -1440,7 +1440,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_control(
 			'so_see_all_color',
 			[
-				'label' => __('Color', 'OBPress_General_Widgets'),
+				'label' => __('Color', 'OBPress_SpecialOffers'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'input_type' => 'color',
 				'default' => '#000',
@@ -1454,7 +1454,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'so_see_all_typography',
-				'label' => __('Typography', 'OBPress_General_Widgets'),
+				'label' => __('Typography', 'OBPress_SpecialOffers'),
 				'selector' => '.obpress-special-offer-holder .obpress-special-offer-link-holder a',
 				'fields_options' => [
 					'typography' => [
@@ -1488,7 +1488,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_control(
 			'so_see_all_hover_color',
 			[
-				'label' => __('Hover Color', 'OBPress_General_Widgets'),
+				'label' => __('Hover Color', 'OBPress_SpecialOffers'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'input_type' => 'color',
 				'default' => '#000',
@@ -1501,7 +1501,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_control(
 			'so_see_all_transition',
 			[
-				'label' => __( 'Button Transition', 'OBPress_General_Widgets' ),
+				'label' => __( 'Button Transition', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 0.3,
