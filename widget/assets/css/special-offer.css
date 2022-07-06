@@ -33,13 +33,14 @@
 }
 
 .obpress-swiper .swiper-slide {
-  height: 500px;
+  height: 470px;
 }
 
 .obpress-swiper-nav {
   display: flex;
   width: 100%;
   justify-content: center;
+  margin-top: 0px;
 }
 
 div.so-obpress-swiper-prev,
@@ -155,6 +156,7 @@ div.obpress-offer-partial-left::before {
   justify-content: space-between;
   padding: 20px 27px 27px 30px;
   box-shadow: 0px 14px 54px #bead8e33;
+  min-height: 172px;
 }
 
 .obpress-offer-description {
