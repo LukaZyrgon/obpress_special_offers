@@ -199,6 +199,7 @@ div.obpress-offer-partial-left::before {
   color: #2c2f33;
   line-height: 15px;
   margin-bottom: 0px;
+  white-space: nowrap;
 }
 
 .obpress-offer-number,
