@@ -3,391 +3,392 @@
 # https://wpml.org
 msgid ""
 msgstr ""
-"Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Project-Id-Version:WPML_EXPORT_OBPress_SpecialOffers\n"
+"Project-Id-Version: WPML_EXPORT_OBPress_SpecialOffers\n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language:pt-pt\n"
+"Language: pt_PT\n"
 "MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.1\n"
 
-#: /* translators: 1: Plugin name 2: PHP 3: Required PHP version */
-#: esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'obpress-widget' ),
-#: '<strong>' . esc_html__( 'Elementor Test Extension', 'OBPress_SpecialOffers' ) . '</strong>',
 # wpml-name: b3b86bde314cbaa9c97d5444fed3c39b
+#: /* translators: 1: Plugin name 2: PHP 3: Required version */ esc_html__(
+#: '"%1$s" requires "%2$s" %3$s or greater.', 'obpress-widget' ), '<strong>' .
+#: 'Elementor Test Extension', 'OBPress_SpecialOffers' ) '</strong>',
 msgid "Elementor Test Extension"
-msgstr ""
+msgstr "Extensão de Teste Elementor"
 
 # wpml-name: 62a5e490880a92eef74f167d9dc6dca0
 msgid "Hide"
-msgstr ""
+msgstr "Esconder"
 
 # wpml-name: 498f79c4c5bbde77f1bceb6c86fd0f6d
 msgid "Show"
-msgstr ""
+msgstr "Mostrar"
 
 # wpml-name: 145fb8834221d594be2907503e7c9ed5
 msgid "Custom Button Width And Height"
-msgstr ""
+msgstr "Largura e altura do botão personalizado"
 
 # wpml-name: 838389e9675a112e8187aa34a4f61709
 msgid "Box Shadow"
-msgstr ""
+msgstr "Sombra da caixa"
 
 # wpml-name: d069ff6f27599676a47adad9d74cc4dd
 msgid "Hover Color"
-msgstr ""
+msgstr "Cor do cursor"
 
 # wpml-name: 603850e072131401265c4fc01027db93
 msgid "Typography"
-msgstr ""
+msgstr "Tipografia"
 
 # wpml-name: cb5feb1b7314637725a2e73bdc9f7295
 msgid "Color"
-msgstr ""
+msgstr "Cor"
 
 # wpml-name: cf11e516ea83459abe854e3da4aac4ed
 msgid "Horizontal Alignment"
-msgstr ""
+msgstr "Alinhamento horizontal"
 
 # wpml-name: 98369609669478919c74c916440e9978
 msgid "Margin"
-msgstr ""
+msgstr "Margem"
 
 # wpml-name: 417542e22f52a0ac5be358b9b78cf0e3
 msgid "See All Section"
-msgstr ""
+msgstr "Ver toda a seção"
 
 # wpml-name: 891c58254a1c7de62cc4909042fd53bb
 msgid "Pagination Height"
-msgstr ""
+msgstr "Altura da paginação"
 
 # wpml-name: 7a8b1003f46cff6e38f60bbb250c76bc
 msgid "Pagination Width"
-msgstr ""
+msgstr "Largura da paginação"
 
 # wpml-name: a2202f65c2cdad7fc8d42139d37a75d5
 msgid "Pagination Active Width"
-msgstr ""
+msgstr "Largura ativa da paginação"
 
 # wpml-name: c201a6f905ea2ed35b68905cc63f02a3
 msgid "Pagination Margin"
-msgstr ""
+msgstr "Margem de paginação"
 
 # wpml-name: 4e0bdf031d8d52c6f5b41fe727750b2c
 msgid "Pagination Bullet Color"
-msgstr ""
+msgstr "Cor do marcador de paginação"
 
 # wpml-name: e4da3b7fbbce2345d7772b0674a318d5
 msgid "5"
-msgstr ""
+msgstr "5"
 
 # wpml-name: a87ff679a2f3e71d9181a67b7542122c
 msgid "4"
-msgstr ""
+msgstr "4"
 
 # wpml-name: eccbc87e4b5ce2fe28308fd9f2a7baf3
 msgid "3"
-msgstr ""
+msgstr "3"
 
 # wpml-name: c81e728d9d4c2f636f067f89cc14862c
 msgid "2"
-msgstr ""
+msgstr "2"
 
 # wpml-name: b2f9fce52262bae662f5665eee0cf22c
 msgid "Number of Pagination Bullets"
-msgstr ""
+msgstr "Número de marcadores de paginação"
 
 # wpml-name: b9f5c797ebbf55adccdd8539a65a0241
 msgid "Disabled"
-msgstr ""
+msgstr "Desabilitado"
 
 # wpml-name: 1411e2631996697a68c519df86f578b9
 msgid "Bullets"
-msgstr ""
+msgstr "Balas"
 
 # wpml-name: a0b0293a2db49f5f93c15a62e095c819
 msgid "Lines"
-msgstr ""
+msgstr "Linhas"
 
 # wpml-name: 78b8341b84a7e7cc002462e43670ff6e
 msgid "Slider Pagination"
-msgstr ""
+msgstr "Paginação deslizante"
 
 # wpml-name: 673299c6e50d574e644a92dbb068bf5b
 msgid "Next Icon"
-msgstr ""
+msgstr "Próximo ícone"
 
 # wpml-name: ab992134fbe667b5f3f530d2482d09cc
 msgid "Back Icon"
-msgstr ""
+msgstr "Ícone Voltar"
 
 # wpml-name: 990e2b546502e0dd50a6104c67962def
 msgid "Nest Button Margin"
-msgstr ""
+msgstr "Margem do próximo botão"
 
 # wpml-name: 6d43420a24f675666b4bd27bab14e33d
 msgid "Previous Button Margin"
-msgstr ""
+msgstr "Margem do botão anterior"
 
 # wpml-name: 1eaf65fd9527c22ed4383c0434889bfb
 msgid "Button Height"
-msgstr ""
+msgstr "Altura do botão"
 
 # wpml-name: dfe722a9c0915f2b2d6240c4e8b6516c
 msgid "Button Width"
-msgstr ""
+msgstr "Largura do botão"
 
 # wpml-name: c66e28aaeaf79d2f11f598a0bf21864a
 msgid "Pagination And Buttons"
-msgstr ""
+msgstr "Paginação e botões"
 
 # wpml-name: 152dd93c47dbbec0a7ea1fcbfdf7c199
 msgid "Slider Transition(seconds)"
-msgstr ""
+msgstr "Transição do controle deslizante (segundos)"
 
 # wpml-name: 285a4572157533553c9ffcdcec36a339
 msgid "Space Between Slides"
-msgstr ""
+msgstr "Espaço entre slides"
 
 # wpml-name: 13e188b17119ae5f25039cafe978dc0b
 msgid "Slides Per View"
-msgstr ""
+msgstr "Apresentações por visualização"
 
 # wpml-name: 4b20c755d533cf0b13a8aaba0cd6c1de
 msgid "Centered Slides"
-msgstr ""
+msgstr "Slides centralizados"
 
 # wpml-name: d15305d7a4e34e02489c74a5ef542f36
 msgid "Off"
-msgstr ""
+msgstr "Desligado"
 
 # wpml-name: 521c36a31c2762741cf0f8890cbe05e3
 msgid "On"
-msgstr ""
+msgstr "Sobre"
 
 # wpml-name: 57601521bc4355ee399df3458191d691
 msgid "Allow Image Looping"
-msgstr ""
+msgstr "Permitir loop de imagem"
 
 # wpml-name: 2d9b9a764fb0be4be10e1b2fce63f561
 msgid "Slider"
-msgstr ""
+msgstr "Controle deslizante"
 
 # wpml-name: cdc66ac22696699c5ede38616f055fb1
 msgid "Button Transition"
-msgstr ""
+msgstr "Transição do botão"
 
 # wpml-name: 6d5ddc792a3302db7ba347aec742e20c
 msgid "Button Hover Border Color"
-msgstr ""
+msgstr "Cor da borda do botão ao passar o mouse"
 
 # wpml-name: b5e6b6f3bc35065ebb16dd71581803bd
 msgid "Button Border"
-msgstr ""
+msgstr "Borda do botão"
 
 # wpml-name: fd01f82e7eeb8a87e457d45532c8549c
 msgid "Button Hover Color"
-msgstr ""
+msgstr "Cor do botão ao passar o mouse"
 
 # wpml-name: 06581ae42ff416332435c21c03054c77
 msgid "Button Background Hover Color"
-msgstr ""
+msgstr "Cor de fundo do botão"
 
 # wpml-name: ee65459d3e1a776a985cd3763566b656
 msgid "Button Typography"
-msgstr ""
+msgstr "Tipografia de botão"
 
 # wpml-name: 909735083e539c5f31b6380233ca6521
 msgid "Button Color"
-msgstr ""
+msgstr "Cor do botao"
 
 # wpml-name: f858a2aa5748b7fd3c05ca9e5726cd17
 msgid "Button Background Color"
-msgstr ""
+msgstr "Cor de fundo do botão"
 
 # wpml-name: a63706eecfa33f67b315f978392ad7ae
 msgid "Alignment"
-msgstr ""
+msgstr "Alinhamento"
 
 # wpml-name: 8bd3a38e93e94542fb11c43f6c6f50ac
 msgid "Offer Price Margin"
-msgstr ""
+msgstr "Margem de preço da oferta"
 
 # wpml-name: 4ffff1db6aa525dbb8b7d94c33481bcb
 msgid "Night Typography"
-msgstr ""
+msgstr "Tipografia Noturna"
 
 # wpml-name: 3e7e4088ada5cded20b32d0186d66ae3
 msgid "Price Typography"
-msgstr ""
+msgstr "Tipografia de preço"
 
 # wpml-name: 90c62142164579cd675a530212eb2877
 msgid "Price Color"
-msgstr ""
+msgstr "Cor do preço"
 
 # wpml-name: 4c7ddf0c25617e02b5249643477ca041
 msgid "Price Message Alignment"
-msgstr ""
+msgstr "Alinhamento de mensagem de preço"
 
 # wpml-name: f8efebd2807f12482a1a9012b2bc6ec8
 msgid "Price Message Typography"
-msgstr ""
+msgstr "Tipografia de mensagem de preço"
 
 # wpml-name: 27c1e03d7ba037d2109abd627257357a
 msgid "Price Message Color"
-msgstr ""
+msgstr "Cor da mensagem de preço"
 
 # wpml-name: 5767b24016b9ac43a2c349914e3b8ec0
 msgid "Price And Button"
-msgstr ""
+msgstr "Preço e botão"
 
 # wpml-name: 24217c6a8ce9059810a4297ca3e00496
 msgid "Decription Alignment"
-msgstr ""
+msgstr "Descrição Alinhamento"
 
 # wpml-name: 853796c4e28d40a5a12abc84e771e25f
 msgid "Offer Description Typography"
-msgstr ""
+msgstr "Oferta Descrição Tipografia"
 
 # wpml-name: e0185bd95b2af210d1eac309dc33a8be
 msgid "Offer Description Color"
-msgstr ""
+msgstr "Oferta Descrição Cor"
 
 # wpml-name: fb45f1662b1393b4bc165768a774ed2e
 msgid "Hotel Name Margin"
-msgstr ""
+msgstr "Margem do nome do hotel"
 
 # wpml-name: 593e2b186d6de64f792b3ad4abadc2e3
 msgid "Hotel Name Typography"
-msgstr ""
+msgstr "Tipografia do nome do hotel"
 
 # wpml-name: 51742b9a4780c7067f1937bcd41930d1
 msgid "Hotel Name Color"
-msgstr ""
+msgstr "Cor do nome do hotel"
 
 # wpml-name: f94d6601dd6a1a90559aed4f25d2daf2
 msgid "Offer Name Margin"
-msgstr ""
+msgstr "Margem do nome da oferta"
 
 # wpml-name: 92b09c7c48c520c3c55e497875da437c
 msgid "Right"
-msgstr ""
+msgstr "Certo"
 
 # wpml-name: 945d5e233cf7d6240f6b783b36a374ff
 msgid "Left"
-msgstr ""
+msgstr "Esquerdo"
 
 # wpml-name: 628acc9407895090e3f7698bb7e166d9
 msgid "Offer Name Alignment"
-msgstr ""
+msgstr "Alinhamento do nome da oferta"
 
 # wpml-name: 7b1a514ad3415aedcc4ea24d49df7f66
 msgid "Offer Name Typography"
-msgstr ""
+msgstr "Tipografia do nome da oferta"
 
 # wpml-name: 1edb4baeb8ee1d7a6c2e854e2d331510
 msgid "Offer Name Color"
-msgstr ""
+msgstr "Cor do nome da oferta"
 
 # wpml-name: 760357017b648a268089261f7ce8812a
 msgid "Flex End"
-msgstr ""
+msgstr "Extremidade flexível"
 
 # wpml-name: 4f1f6016fc9f3f2353c0cc7c67b292bd
 msgid "Center"
-msgstr ""
+msgstr "Centro"
 
 # wpml-name: 4aaa9193f368e1ce2c2668244b6eee07
 msgid "Flex Start"
-msgstr ""
+msgstr "Início flexível"
 
 # wpml-name: daa3a8e38d3417760fe479ba9a956f21
 msgid "Space Evenly"
-msgstr ""
+msgstr "Espaçar uniformemente"
 
 # wpml-name: 48ad0b896ae6d7004eb87bad5a125d71
 msgid "Space Around"
-msgstr ""
+msgstr "Espaço ao redor"
 
 # wpml-name: 5a2cafc2b0fdf3e5242d40a878db7129
 msgid "Space Between"
-msgstr ""
+msgstr "Espaço entre"
 
 # wpml-name: 389169d18db0d4b49bc014bbfc5e6b6b
 msgid "Box Horizontal Alignmant"
-msgstr ""
+msgstr "Alinhamento Horizontal da Caixa"
 
 # wpml-name: a10443964156b9e87c95e74c8f9baf15
 msgid "Padding"
-msgstr ""
+msgstr "Preenchimento"
 
 # wpml-name: 32954654ac8fe66a1d09be19001de2d4
 msgid "Width"
-msgstr ""
+msgstr "Largura"
 
 # wpml-name: 75e7422f2fe253fc69d3f6c148d197ee
 msgid "Background Color"
-msgstr ""
+msgstr "Cor de fundo"
 
 # wpml-name: 647b41d09f4fa931fc4132acf2e139cc
 msgid "Info Section"
-msgstr ""
+msgstr "Seção de informações"
 
 # wpml-name: 70c23518ac5deb25988724e2fd8d3966
 msgid "Ribbon Vertical Position"
-msgstr ""
+msgstr "Posição vertical da fita"
 
 # wpml-name: 738dec1537587e1047ce4819bac12534
 msgid "Ribbon Typography"
-msgstr ""
+msgstr "Tipografia de fita"
 
 # wpml-name: 337389f338f656637140f2ca8412cb03
 msgid "Ribbon Color"
-msgstr ""
+msgstr "Cor da fita"
 
 # wpml-name: 1d5e00a22e8b08f454795ed765c16caa
 msgid "Ribbon Padding"
-msgstr ""
+msgstr "Preenchimento de fita"
 
 # wpml-name: a6ceb1d2d8e2aede75edd5119b571521
 msgid "Ribbon Backgroung Color"
-msgstr ""
+msgstr "Cor de fundo da fita"
 
 # wpml-name: eec6c4bdbd339edf8cbea68becb85244
 msgid "Height"
-msgstr ""
+msgstr "Altura"
 
 # wpml-name: 56153ea1b13e756b980f9d1425cb9c12
 msgid "Image Section"
-msgstr ""
+msgstr "Seção de Imagem"
 
 # wpml-name: 22940c038891698eeded778f249e5ccd
 msgid "Special Offers"
-msgstr ""
+msgstr "Ofertas especiais"
 
 # wpml-name: b869993b9e9305a5028b33ee8b221dd4
 msgid "View More"
-msgstr ""
+msgstr "Veja mais"
 
 # wpml-name: 453d11d297e3318a9112039e9a41ef3d
 msgid "See all"
-msgstr ""
+msgstr "Ver todos"
 
 # wpml-name: 891ad007e2e9f2d55be6669cd9abc7a0
 msgid "See more"
-msgstr ""
+msgstr "Ver mais"
 
 # wpml-name: 0edc9b073397681dc9f2c479686ea0d9
 msgid "Night"
-msgstr ""
+msgstr "Noite"
 
 # wpml-name: 95b6faa9d75417fe5e7767a733ab6fb4
 msgid "Starting at"
-msgstr ""
+msgstr "Começando às"
 
 # wpml-name: 53656ab1759f06e2ba5d4e5955ae11cf
 msgid "Pay up to"
-msgstr ""
+msgstr "Pague até"
