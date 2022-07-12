@@ -1175,7 +1175,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 		$this->add_responsive_control(
 			'so_next_button_margin',
 			[
-				'label' => __( 'Nest Button Margin', 'OBPress_SpecialOffers' ),
+				'label' => __( 'Next Button Margin', 'OBPress_SpecialOffers' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'devices' => [ 'desktop', 'mobile' ],
 				'desktop_default' => [

@@ -126,7 +126,7 @@ msgid "Back Icon"
 msgstr "Icono Atrás"
 
 # wpml-name: 990e2b546502e0dd50a6104c67962def
-msgid "Nest Button Margin"
+msgid "Next Button Margin"
 msgstr "Margen del botón siguiente"
 
 # wpml-name: 6d43420a24f675666b4bd27bab14e33d
