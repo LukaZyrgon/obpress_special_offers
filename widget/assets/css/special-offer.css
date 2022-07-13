@@ -65,9 +65,17 @@ div.so-obpress-swiper-prev {
   margin-right: 80px;
 }
 
+div.so-obpress-swiper-prev:hover {
+  background-image: url(../icons/backHover.svg);
+}
+
 div.so-obpress-swiper-next {
   background-image: url(../icons/next.svg);
   margin-left: 80px;
+}
+
+div.so-obpress-swiper-next:hover {
+  background-image: url(../icons/nextHover.svg);
 }
 
 div.so-obpress-swiper-prev::after,

@@ -904,7 +904,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 				'label' => __('Button Background Hover Color', 'OBPress_SpecialOffers'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'input_type' => 'color',
-				'default' => '#000',
+				'default' => '#fff',
 				'selectors' => [
 					'.obpress-special-offer-holder a.obpress-offer-more:hover' => 'background-color: {{so_button_bg_hover_color}}'
 				],
@@ -917,7 +917,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 				'label' => __('Button Hover Color', 'OBPress_SpecialOffers'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'input_type' => 'color',
-				'default' => '#fff',
+				'default' => '#191919',
 				'selectors' => [
 					'.obpress-special-offer-holder a.obpress-offer-more:hover' => 'color: {{so_button_hover_color}}'
 				],
@@ -956,7 +956,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 				'label' => __('Button Hover Border Color', 'OBPress_SpecialOffers'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'input_type' => 'color',
-				'default' => '#000',
+				'default' => '#191919',
 				'selectors' => [
 					'.obpress-special-offer-holder a.obpress-offer-more:hover' => 'border-color: {{so_button_hover_border_color}}'
 				],
