@@ -1200,18 +1200,103 @@ class SpecialOffer extends \Elementor\Widget_Base
 		);
 
 		$this->add_control(
-			'obpress_so_pagination_bullet_back_icon',
+			'obpress_so_next_and_previous_buttons_hover_transition',
 			[
-				'label' => __( 'Back Icon', 'OBPress_SpecialOffers' ),
-				'type' => \Elementor\Controls_Manager::ICONS,
+				'label' => __( 'Buttons Hover Transition(seconds)', 'OBPress_General_Widgets' ),
+				'type' => \Elementor\Controls_Manager::SLIDER,
+				'size_units' => [ 's'],
+				'range' => [
+					's' => [
+						'min' => 0,
+						'max' => 5,
+						'step' => 0.1,
+					]
+				],
+				'default' => [
+					'unit' => 's',
+					'size' => 0.3,
+				],
+				'selectors' => [
+					'.obpress-special-offer-holder svg .custtom_bg_color, .obpress-special-offer-holder svg .custtom_color' => 'transition: {{SIZE}}s',
+				]
 			]
 		);
 
 		$this->add_control(
-			'obpress_so_pagination_bullet_next_icon',
+			'obpress_so_next_and_previous_buttons_bg_color',
 			[
-				'label' => __( 'Next Icon', 'OBPress_SpecialOffers' ),
-				'type' => \Elementor\Controls_Manager::ICONS,
+				'label' => __('Buttons Bg Color', 'OBPress_General_Widgets'),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'input_type' => 'color',
+				'default' => '#000',
+				'selectors' => [
+					'.obpress-special-offer-holder .obpress-swiper-nav .custtom_bg_color' => 'fill: {{obpress_so_next_and_previous_buttons_bg_color}}'
+				],
+			]
+		);
+
+		$this->add_control(
+			'obpress_so_next_and_previous_buttons_border_color',
+			[
+				'label' => __('Buttons Border Color', 'OBPress_General_Widgets'),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'input_type' => 'color',
+				'default' => '#000',
+				'selectors' => [
+					'.obpress-special-offer-holder .obpress-swiper-nav .custtom_bg_color' => 'stroke: {{obpress_so_next_and_previous_buttons_border_color}}'
+				],
+			]
+		);
+
+		$this->add_control(
+			'obpress_so_next_and_previous_buttons_arrows_color',
+			[
+				'label' => __('Buttons Arrows Color', 'OBPress_General_Widgets'),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'input_type' => 'color',
+				'default' => '#fff',
+				'selectors' => [
+					'.obpress-special-offer-holder .obpress-swiper-nav .custtom_color' => 'stroke: {{obpress_so_next_and_previous_buttons_arrows_color}}'
+				],
+			]
+		);
+
+		$this->add_control(
+			'obpress_so_next_and_previous_buttons_bg_hover_color',
+			[
+				'label' => __('Buttons Bg Hover Color', 'OBPress_General_Widgets'),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'input_type' => 'color',
+				'default' => '#fff',
+				'selectors' => [
+					'.obpress-special-offer-holder .obpress-swiper-nav svg:hover .custtom_bg_color' => 'fill: {{obpress_so_next_and_previous_buttons_bg_hover_color}}'
+				],
+			]
+		);
+
+		$this->add_control(
+			'obpress_so_next_and_previous_buttons_border_hover_color',
+			[
+				'label' => __('Buttons Border Hover Color', 'OBPress_General_Widgets'),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'input_type' => 'color',
+				'default' => '#000',
+				'selectors' => [
+					'.obpress-special-offer-holder .obpress-swiper-nav svg:hover .custtom_bg_color' => 'stroke: {{obpress_so_next_and_previous_buttons_border_hover_color}}'
+				],
+			]
+		);
+
+		$this->add_control(
+			'obpress_so_next_and_previous_buttons_arrows_hover_color',
+			[
+				'label' => __('Buttons Arrows Hover Color', 'OBPress_General_Widgets'),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'input_type' => 'color',
+				'default' => '#000',
+				'selectors' => [
+					'.obpress-special-offer-holder .obpress-swiper-nav svg:hover .custtom_color' => 'stroke: {{obpress_so_next_and_previous_buttons_arrows_hover_color}}'
+				],
 			]
 		);
 
@@ -1410,6 +1495,33 @@ class SpecialOffer extends \Elementor\Widget_Base
 		);
 
 		$this->add_responsive_control(
+			'so_see_all_padding',
+			[
+				'label' => __( 'Padding', 'OBPress_SpecialOffers' ),
+				'type' => \Elementor\Controls_Manager::DIMENSIONS,
+				'devices' => [ 'desktop', 'mobile' ],
+				'desktop_default' => [
+					'top' => '15',
+					'right' => '40',
+					'bottom' => '15',
+					'left' => '40',
+					'isLinked' => false
+				],
+				'mobile_default' => [
+					'top' => '15',
+					'right' => '40',
+					'bottom' => '15',
+					'left' => '40',
+					'isLinked' => false
+				],
+				'size_units' => [ 'px', '%', 'em' ],
+				'selectors' => [
+					'.obpress-special-offer-holder .obpress-special-offer-link-holder a' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				],
+			]
+		);
+
+		$this->add_responsive_control(
 			'so_see_all_justify_content',
 			[
 				'label' => __( 'Horizontal Alignment', 'OBPress_SpecialOffers' ),
@@ -1437,15 +1549,41 @@ class SpecialOffer extends \Elementor\Widget_Base
 			]
 		);
 
-		$this->add_control(
-			'so_see_all_color',
+		$this->add_group_control(
+			\Elementor\Group_Control_Border::get_type(),
 			[
-				'label' => __('Color', 'OBPress_SpecialOffers'),
+				'name' => 'so_see_all_border',
+				'label' => __( 'Border', 'OBPress_SpecialOffers' ),
+				'fields_options' => [
+					'border' => [
+						'default' => 'solid',
+					],
+					'width' => [
+						'default' => [
+							'top' => '1',
+							'right' => '1',
+							'bottom' => '1',
+							'left' => '1',
+							'isLinked' => true,
+						],
+					],
+					'color' => [
+						'default' => '#191919',
+					],
+				],
+				'selector' => '.obpress-special-offer-holder .obpress-special-offer-link-holder a',
+			]
+		);
+
+		$this->add_control(
+			'so_see_all_border_hover_color',
+			[
+				'label' => __('Border Hover Color', 'OBPress_SpecialOffers'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'input_type' => 'color',
-				'default' => '#000',
+				'default' => '#191919',
 				'selectors' => [
-					'.obpress-special-offer-holder .obpress-special-offer-link-holder a' => 'color: {{so_see_all_color}}'
+					'.obpress-special-offer-holder .obpress-special-offer-link-holder a:hover' => 'border-color: {{so_see_all_border_hover_color}}'
 				],
 			]
 		);
@@ -1466,21 +1604,57 @@ class SpecialOffer extends \Elementor\Widget_Base
 					'font_size' => [
 						'default' => [
 							'unit' => 'px',
-							'size' => '20',
+							'size' => '14',
 						],
 					],
 					'font_weight' => [
-						'default' => '500',
+						'default' => '700',
 					],
 					'line_height' => [
 						'default' => [
 							'unit' => 'px',
-							'size' => '24',
+							'size' => '18',
 						],
-					],
-					'text_decoration' => [
-						'default' => 'underline',
 					]
+				],
+			]
+		);
+
+		$this->add_control(
+			'so_see_all_color',
+			[
+				'label' => __('Color', 'OBPress_SpecialOffers'),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'input_type' => 'color',
+				'default' => '#191919',
+				'selectors' => [
+					'.obpress-special-offer-holder .obpress-special-offer-link-holder a' => 'color: {{so_see_all_color}}'
+				],
+			]
+		);
+
+		$this->add_control(
+			'so_see_all_bg_color',
+			[
+				'label' => __('Background Color', 'OBPress_SpecialOffers'),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'input_type' => 'color',
+				'default' => '#fff',
+				'selectors' => [
+					'.obpress-special-offer-holder .obpress-special-offer-link-holder a' => 'background-color: {{so_see_all_bg_color}}'
+				],
+			]
+		);
+
+		$this->add_control(
+			'so_see_all_bg_hover_color',
+			[
+				'label' => __('Background Hover Color', 'OBPress_SpecialOffers'),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'input_type' => 'color',
+				'default' => '#191919',
+				'selectors' => [
+					'.obpress-special-offer-holder .obpress-special-offer-link-holder a:hover' => 'background-color: {{so_see_all_bg_hover_color}}'
 				],
 			]
 		);
@@ -1491,7 +1665,7 @@ class SpecialOffer extends \Elementor\Widget_Base
 				'label' => __('Hover Color', 'OBPress_SpecialOffers'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'input_type' => 'color',
-				'default' => '#000',
+				'default' => '#fff',
 				'selectors' => [
 					'.obpress-special-offer-holder .obpress-special-offer-link-holder a:hover' => 'color: {{so_see_all_hover_color}}'
 				],

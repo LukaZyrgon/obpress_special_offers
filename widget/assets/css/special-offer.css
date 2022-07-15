@@ -43,6 +43,24 @@
   margin-top: 0px;
 }
 
+.swiper-button-prev svg {
+  transform: rotate(180deg);
+}
+
+.swiper-button-prev svg,
+.swiper-button-next svg {
+  width: 100%;
+  height: 100%;
+}
+
+.custtom_bg_color {
+  fill: #000;
+  stroke: #000;
+}
+.custtom_color {
+  stroke: #fff;
+}
+
 div.so-obpress-swiper-prev,
 div.so-obpress-swiper-pagination,
 div.so-obpress-swiper-next {
@@ -61,21 +79,32 @@ div.so-obpress-swiper-next {
 }
 
 div.so-obpress-swiper-prev {
-  background-image: url(../icons/back.svg);
+  background-image: unset;
   margin-right: 80px;
+  transition: 0.3s;
 }
 
-div.so-obpress-swiper-prev:hover {
-  background-image: url(../icons/backHover.svg);
+svg .custtom_bg_color, 
+svg .custtom_color {
+  transition: 0.3s;
 }
 
 div.so-obpress-swiper-next {
-  background-image: url(../icons/next.svg);
+  background-image: unset;
   margin-left: 80px;
+  transition: 0.3s;
 }
 
-div.so-obpress-swiper-next:hover {
-  background-image: url(../icons/nextHover.svg);
+.obpress-swiper-nav svg:hover .custtom_bg_color {
+  stroke: #000;
+}
+
+.obpress-swiper-nav svg:hover .custtom_color {
+  stroke: #000;
+}
+
+.obpress-swiper-nav svg:hover .custtom_bg_color {
+  fill: #fff;
 }
 
 div.so-obpress-swiper-prev::after,
@@ -276,11 +305,18 @@ a.obpress-offer-more:hover {
 }
 
 .obpress-special-offer-link-holder a {
-  color: #000000;
-  font-size: 20px;
-  font-weight: 500;
-  text-decoration: underline;
-  line-height: 24px;
+  color: #191919;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  padding: 15px 40px;
+  border: 1px solid #191919;
+  text-decoration: none;
+}
+
+.obpress-special-offer-link-holder a:hover {
+  background-color: #191919;
+  color: #fff;
 }
 
 .obpress-special-offer-holder-mobile {
